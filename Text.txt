@@ -1,0 +1,6373 @@
+
+
+Session 1 :
+	Download VSCode 
+	 Open Folder
+		Choose location  
+		create folder with ProjectHTML
+
+	save file as index.html
+	shift + 1 --> Enter 
+	Live Server 
+	
+
+
+HTML refers to HyperText Markup Language  and it is one of the  
+Browser's Understandable Language to display the information in the
+Browser. 
+
+HTML is the language with information traversing through HTTP protocol. 
+					traversing
+			Travelling  + Parsing 
+
+Index - root page / Home page -- index.html 
+index.html indicates root or home page of any web sites.
+
+	HTML 
+		-elements 
+			- tags 
+				- attributes (additional info / property )
+		<p>
+		</p> - container tags 
+		<br> - self closing 
+
+First Element of any  webpage	
+	<!DOCTYPE html>   - Document Type - html
+	Where the Browser recognizes the Document as HTML and executes.
+
+HTML is a collection of Elements. 
+	HTML Document starts with a container Element <html> and ends 
+	with </html>.
+	representation of an element inside <> (fragment) is called 
+	as a Tag. 
+	Tags are of 2 types : 
+		Tags with starting and ending tags 
+		Tags with self closing 
+	html is divided into 2 main sections : head and body 
+	<html>
+		<head>
+			Non - Visual Elements 
+		</head>
+		<body>
+			Visual Elements
+		</body>
+	</html>
+
+	Developer Tools - Browser 
+
+	HTML consists of predefined Elements : 
+	Text Headers 
+		h1
+		h2
+		h3
+		h4
+		h5
+		h6
+
+	p - paragraph element 
+
+
+	<hr> - horizantal line - Thematic break 
+	<br> - break - single line break
+	<div> - Block Container Element 
+	<!-- <div>
+		<p>
+			Inside a div and para 
+		</p>
+	</div> --> - Comment 
+
+	Text Formatting Elements 
+		<b> - bold text
+		<big> - big text 
+		<i> / <em> - italic text 
+		<small> - small text
+		<strong> - strong text 
+		<sub> - subscripted text
+		<sup> - superscripted text 
+		<ins> - inserted text 
+		<del> - deleted text 
+
+	
+
+Session 2: 
+	Elements 
+		Lists 
+			Ordered Lists	
+				<ol>
+			UnOrdered Lists
+				<ul>
+			
+			List Item - <li>
+			
+			definition lists
+
+			<dl>
+				<dt>Flavio</dt> - definition term
+				<dd>The name</dd> - definition description
+				<dt>Copes</dt>
+				<dd>The surname</dd>
+			</dl>
+
+		Tables
+			Table Head
+			Table Body 
+			Table Foot
+
+		<table>
+		<thead>
+			<tr>
+				<th>S.no</th>
+				<th>Name</th>
+				<th>Age</th>
+				<th>Total Marks</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Abhi</td>
+				<td>23</td>
+				<td>65</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Balu</td>
+				<td>22</td>
+				<td>67</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Ciya</td>
+				<td>22</td>
+				<td>75</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="3">Total Number of Students</td>
+				<td>3</td>
+			</tr>
+		</tfoot>
+	</table>
+
+	Links : 
+
+		a 
+		<a href="index.html" target ="_blank">Home</a>
+
+	Attributes : 
+		are the additional information provided to the Elements.
+		3 types : 
+			1. predefined
+			2. class 
+			3. id 
+
+	Types of Elements : 
+		block level elements
+			starts from a new line 
+			Tags : h1 - h6, div, p, ol, ul, li, table,form etc
+			div - block level container
+		inline elements 
+			are normally displayed without breaks
+			Tags : b, strong, big, small, sup, sub, ins, del, i, em, a, img, input, span etc
+			span - inline element container
+
+		APPLET - Java Applet
+		IFRAME - inline Frame
+		INS - inserted Text
+		MAP - image map
+		OBJECT - embedded object
+		SCRIPT - script with in HTML
+
+iframes
+The iframe tag allows us to embed content coming from other origins
+(other sites) into our web page.
+
+The srcdoc attribute lets you specify some inline HTML to show.
+<iframe srcdoc="<p>My dog is a good dog</p>"></iframe>
+
+The sandbox attribute allows us to limit the operations allowed in the
+iframes.
+
+If we omit it, everything is allowed:
+<iframe src="page.html"></iframe>
+If we set it to "", nothing is allowed:
+<iframe src="page.html" sandbox=""></iframe>
+
+list of the options you can use:
+	allow-forms : allow to submit forms
+	allow-modals allow to open modals windows, including calling alert() in JavaScript
+	allow-orientation-lock allow to lock the screen orientation iframes 72
+	allow-popups allow popups, using window.open() and target="_blank" links
+	allow-same-origin treat the resource being loaded as same origin
+	allow-scripts lets the loaded iframe run scripts (but not create popups).
+	allow-top-navigation gives access to the iframe to the top level browsing context
+
+The figure tag is often used along with the img tag.
+figure is a semantic tag often used when you want to display an
+image with a caption. 
+<figure>
+	<img src="dog.png" alt="A nice dog">
+	<figcaption>A nice dog</figcaption>
+</figure>
+
+
+	HTML Colors : 
+
+	HTML Colors are made up with 3 combinations : 
+		R G B 
+
+		Red Green Blue 
+	
+	Colors uses 16 Chars with 3 or 6 digit Hexadecimal code 
+
+		0 1 2 3 4 5 6 7 8 9 a b c d e f 
+
+		16 - Hexadecimal
+
+		#000000
+		#FFF 
+		#RRGGBB
+		#RGB 
+
+
+
+	Forms : 
+		form - method , action 
+		<form align = "center">
+		<input type="search" name="searchText" ><br><br>
+		<select >
+			<option>Option1</option>
+			<option>Option2</option>
+			<option>Option3</option>
+		</select><br><br>
+		<input type="text" name="firstName" required><br><br>
+		<input type="number" name="age" required><br><br>
+		<input type="email" name="email" required><br><br>
+		<input type="password" name="password" required><br><br>
+		<input type="url" name="myurl" required><br><br>
+		<input type="date" name="dob" required><br><br>
+		<input type="color" name="color">
+		<input type="checkbox" name="mycheck" required>
+		<input type="radio" name="myradio" required><br><br>
+		<textarea rows="5" cols="10" required></textarea><br><br>
+		<input type="submit" name="submit">
+
+	</form>
+Assignment : Make use of HTML pages 
+
+Session 3: 
+	HTML5
+		New Elements 
+			header
+			nav
+			article 
+			aside
+			section
+			footer
+			audio
+			video
+			canvas
+			datalist
+			details
+			embed - deprecated 
+			object
+			output
+			progress
+
+Semantic HTML refers to the use of HTML elements that clearly describe their meaning 
+and purpose to both the browser and developers. This involves using elements that 
+convey the role of the content they encapsulate, such as using <header>, <footer>, 
+<article>, and <section> instead of non-semantic elements like <div> and <span>. 
+This enhances the accessibility and SEO of web content by providing clearer structure 
+and meaning.
+
+		Form elements 2.0
+			input types 
+					email
+					search
+					URL
+					Date Pikcer
+					color picker
+					numeric stepper
+
+		Integrated API
+			- Drag and Drop
+			- Audio and Video
+			- Offline Web Applications
+			- History
+			- local storage 
+			- Geolocation 
+			- Web Messaging 
+
+	Content Models - 7 types
+		Metadata
+			elements in head section
+			Elements : base, link, meta, noscript, script, style, title
+
+		Embedded
+			content that imports other resources 
+			Elements : audio, video, canvas, iframe, img, math, object, svg
+
+		Interactive
+			content intended for user interaction
+			Elements : a, audio, video, button, details, embed, iframe, input
+
+		Heading 
+			Defines a section header
+			Elements : h1, h2, h3, h4, h5, h6, hgroup
+
+		Phrasing
+			inline elements in common
+			Elements : img, span, strong, label and more
+
+		Flow Content
+			normal flow of the document 
+
+		Sectioning content
+			Defines scoping of headings, navigation, content and footers
+			Elements: article, section, nav, aside
+
+
+Case insensitive
+HTML is case insensitive. Tags can be written in all caps, or lowercase. 
+
+The title tag
+The title tag determines the page title. The title is displayed in the
+browser, and it is important as it is one of the key factors for
+Search Engine Optimization (SEO).
+
+The meta tag
+Meta tags perform a variety of tasks and they are very, very important.
+Especially for SEO.
+meta elements only have the starting tag.
+The most basic one is the description meta tag:
+<meta name="description" content="A nice page">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+A favicon image is displayed to the left of the page title in the browser tab
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+Details tag 
+
+The <details> tag specifies additional details that the user can open and close on 
+demand.
+
+The <details> tag is often used to create an interactive widget that the user can 
+open and close. By default, the widget is closed. When open, it expands, and displays 
+the content within.
+
+Any sort of content can be put inside the <details> tag. 
+
+The <summary> tag defines a visible heading for the <details> element. 
+The heading can be clicked to view/hide the details.
+
+
+<details>
+  <summary>Sample Content</summary>
+  <p>Sample Content is a theme park at World Resort featuring exciting attractions 
+  and seasonal special events.</p>
+</details>
+
+audio tag 
+
+The <audio> tag is used to embed sound content in a document, 
+such as music or other audio streams.
+
+The <audio> tag contains one or more <source> tags with different audio sources. 
+The browser will choose the first source it supports.
+
+The text between the <audio> and </audio> tags will only be displayed in browsers 
+that do not support the <audio> element.
+
+There are three supported audio formats in HTML: MP3, WAV, and OGG.
+
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+The <source> tag is used to specify multiple media resources for media elements, 
+such as <video>, <audio>, and <picture>.
+
+video tag 
+
+The <video> tag is used to embed video content in a document, such as 
+a movie clip or other video streams.
+
+The <video> tag contains one or more <source> tags with different video sources. 
+The browser will choose the first source it supports.
+
+The text between the <video> and </video> tags will only be displayed in 
+browsers that do not support the <video> element.
+
+There are three supported video formats in HTML: MP4, WebM, and OGG.
+
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+picture tag 
+
+The <picture> tag gives web developers more flexibility in specifying image resources.
+
+The most common use of the <picture> element will be for art direction in responsive 
+designs. Instead of having one image that is scaled up or down based on the viewport 
+width, multiple images can be designed to more nicely fill the browser viewport.
+
+The <picture> element contains two tags: one or more <source> tags and one <img> tag.
+
+The browser will look for the first <source> element where the media query matches 
+the current viewport width, and then it will display the proper image 
+(specified in the srcset attribute). The <img> element is required as the 
+last child of the <picture> element, as a fallback option if none of the source 
+tags matches.
+
+<picture>
+  <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+  <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+
+object tag 
+The <object> tag defines a container for an external resource.
+
+The external resource can be a web page, a picture, a media player, 
+or a plug-in application.
+
+<object data="pic_trulli.jpg" width="300" height="200"></object>
+<object data="snippet.html" width="500" height="200"></object>
+<object data="video.mp4" width="400" height="300"></object>
+
+The <param> tag is used to define parameters for an <object> element.
+
+<object data="horse.wav">
+  <param name="autoplay" value="true">
+</object>
+
+progress tag 
+
+The <progress> tag represents the completion progress of a task.
+<label for="file">Downloading progress:</label>
+<progress id="file" value="32" max="100"> 32% </progress>
+
+The <output> tag is used to represent the 
+result of a calculation (like one performed by a script).
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" value="50">
+        +<input type="number" id="b" value="25">
+        =<output name="x" for="a b"></output>
+</form>
+
+CSS : 
+Cascading Style sheets - is a style language used to describe the look and formatting of a document written
+using HTML or XML.
+Cascading is the behaviour means applying one on other.
+
+we have 3 types of CSS : 
+
+Inline style / Inline CSS: 
+			we will implement inline style using style attribute inside element / tag 
+			<h1 style="background-color: grey;color: white;">
+						propertyName : PropertyValue;
+
+Internal CSS / Embedded CSS 
+			we will Implement the Internal CSS using style element inside 
+			head element of html.
+			<style type="text/css">
+			
+				p{
+					background-color: yellow;
+					color: blue;
+				}
+			</style>
+			Used to apply common styles with in the web page 
+
+Style rules 
+			selector {
+				propertyName : propertyValue;
+			}
+			Contains one or more selectors with declaration block {} and 
+			define the properties inside it.
+
+External CSS : 
+			External CSS will be implemented in a file saved with .css extension 
+			and will be attached to the html page using link element 
+			<link href="style.css" rel="stylesheet">
+
+		Defining the Priority : 
+
+			Inline CSS is having more Priority than Internal and External CSS 
+
+			Internal CSS is having more Priority than External CSS depends on the 
+			position
+
+			To make a style rule highly prioritised we use !important in the 
+			specific style rule 
+
+			p {
+				color : #021b0d !important;
+				background-color: #d6d1d1;
+				border: 5px solid grey;
+			} 
+
+
+Selector points to the HTML element which we want to style. 
+
+There are 8 Types of Selectors listed as follows : 
+		1. Element / Type / Tag selectors
+		2. Class Selectors
+		3. ID Selectors
+		4. Attribute Selectors
+		5. Group Selectors
+		6. Pseudo Selectors
+		7. Descendent Selectors
+		8. Universal Selector
+
+Type Selectors : 
+		The Most commonly used selectors are Type Selectors and targets 
+		to HTML elements .
+
+		p{
+			color: green;
+		}
+
+
+Class Selectors : 
+
+		Class Selectors allow us to style  an HTML element that has a class attribute, 
+		regardless of their Position in the document.
+
+			<div class = "demo">
+				content 
+			</div>
+
+			style.css 
+
+			.demo{
+				color : Red;
+			}
+
+Id Selectors : 
+		Id Selectors allow us to style  an HTML element that has an id attribute, 
+		regardless of their Position in the document.
+
+		The major difference is that IDs can only be applied once per page, while 
+		classes can be used as many times on a page as needed. 
+
+			<div id = "intro">
+				Content
+			</div>
+
+			style.css 
+
+			#intro{
+				color : blue;
+			}
+			
+Descendent Selectors: 
+		These Selectors are used to select the elements that are Descendents of 
+		another element.
+		When selecting levels, we can select as many levels deep as we need to.
+			<div id = "intro">
+				<p class = "para">
+					Something else <em>Content</em>
+				</p>
+			</div>
+
+			<div>
+				<ul>
+					<li class="demo">Items <b>List</b></li>
+				</ul>
+			</div>
+
+			style.css : 
+
+			#intro .para em{
+				color : green;
+			} 
+
+			div ul .demo b {
+				color : red;
+			}
+
+Attribute Selectors :
+		The CSS 'attribute selector' is used when we want to style multiple HTML elements 
+		that have the same attribute or attribute values. The attribute selectors are by 
+		default case sensitive and can be written in the square brackets [].
+			[class]{
+				color : red;
+			}
+
+			p[class ="para"]{
+				color : blue;
+			}
+			
+Pseudo Selectors : 
+		An action which a user is performing on the webpage is called as an event. 
+		This is the selector to apply the CSS styles for some special events on the 
+		browser.
+
+			input[type = "text"] : focus {
+				background-color : red;
+			}
+
+Group Selectors : 
+		We can style group of elements with same style rules using group 
+		selectors.
+
+			style.css
+				div, p, h1 {
+					color : red; 
+				}
+
+Universal Selector : 
+		We can style to all the elements with same style rules using 
+		universal selectors (*)
+
+			style.css 
+				*{
+					color : red;
+				}
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+		Example : 
+		header{
+			background-color: yellow;
+			color: blue;
+		}
+		
+		#intro{
+			color: white;
+			background-color: gray;
+		}
+
+		.demo{
+			color: black;
+			background-color: yellow;
+		}
+
+Session 4: 
+CSS Box Model 
+		is essentially a box that wraps around every HTML element.
+		It Consists of : 
+		- margins
+		- borders 
+		- padding 
+		- content 
+
+	Content : 	The Content of the box, where the text and images appear.
+	Padding : 	Clears an area around the content. It is the space between content 
+	and border.
+	Border :  A Border that goes around the padding and content.
+	Margin : Clears an area outside the border.
+
+	CSS Box model allows to add a border around the elements and to define the space 
+	between elements.
+		
+
+CORS - Cross Origin Resource Sharing - errors 
+
+
+
+
+		
+Bootstrap is a responsive Framework / UI toolkit.
+it is used to achieve Responsiveness for web pages.
+it is defined on Grid system layout.
+
+		CDN - Content Delivery Network 
+
+		https://getbootstrap.com/
+
+		CORS - Cross Origin Resource Sharing 
+
+		copy the link at CDN and paste at html --> head section 
+
+	Container : 
+	Containers are the most basic layout element in Bootstrap and are required 
+	when using our default grid system. Containers are used to contain, pad, and 
+	(sometimes) center the content within them. While containers can be nested, most 
+	layouts do not require a nested container.
+
+	container --> row --> col 
+	row  (max of 12 col)
+	A row can have a maximum of 12 columns
+		col 
+
+
+	Simple HTML index Page 
+
+Working of Bootstrap Grid System
+
+Grid systems are used for creating page layouts through a series of rows and 
+columns that have content.
+Here's how the Bootstrap grid system works:
+ - Rows must be placed within a .container class for proper alignment and padding.
+ - Use rows to create horizontal groups of columns.
+ - Content should be placed within columns, and only columns may be immediate children 
+ of rows.
+ - Predefined grid classes like .row and .col-4 are available for quickly making 
+ grid layouts. 
+
+Grid options 
+Bootstrap’s grid system can adapt across all six default breakpoints, and any 
+breakpoints you customize. The six default grid tiers are as follows:
+
+Extra small (xs)
+Small (sm)
+Medium (md)
+Large (lg)
+Extra large (xl)
+Extra extra large (xxl)
+ 
+Containers
+Bootstrap comes with three different containers:
+
+.container, which sets a max-width at each responsive breakpoint
+.container-{breakpoint}, which is width: 100% until the specified breakpoint
+.container-fluid, which is width: 100% at all breakpoints
+
+
+
+ - Columns create gutters (gaps between column content) via padding. That padding is 
+ offset in rows for the first and last column via negative margin on .rows.
+ - Grid columns are created by specifying the number of twelve available columns 
+ you wish to span. 
+
+Gutters : 
+	Gutters are the gaps between column content, created by horizontal padding.
+	We set padding-right and padding-left on each column, and use negative margin 
+	to offset that at the start and end of each row to align content.
+
+	Gutters start at 1.5rem (24px) wide. This allows us to match our grid to the 
+	padding and margin spacers scale.
+
+	Gutters can be responsively adjusted. Use breakpoint-specific gutter classes to 
+	modify horizontal gutters, vertical gutters, and all gutters.
+
+Media Queries
+	Media query is a really fancy term for "conditional CSS rule". It simply applies some 
+	CSS based on certain conditions set forth. If those conditions are met, the style is 
+	applied.
+
+
+	Media Queries in Bootstrap allow us to move, show and hide content based on viewport 
+	size. Following media queries are used in LESS files to create the key breakpoints 
+	in the Bootstrap grid system.
+
+	LESS - Leaner Style Sheet 
+
+	/* Extra small devices (phones, less than 768px) */
+	/* No media query since this is the default in Bootstrap */
+	/* Small devices (tablets, 768px and up) */
+	@media (min-width: @screen-sm-min) { ... }
+	/* Medium devices (desktops, 992px and up) */
+	@media (min-width: @screen-md-min) { ... }
+	/* Large devices (large desktops, 1200px and up) */
+	@media (min-width: @screen-lg-min) { ... }
+	Occasionally these are expanded to include a max-width to limit CSS to a narrower 
+	set of devices.
+	@media (max-width: @screen-xs-max) { ... }
+	@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+	@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+	@media (min-width: @screen-lg-min) { ... }
+	Media queries have two parts, a device specification and then a size rule. In the 
+	above case, 
+	the following rule is set:
+	Lets consider this line:
+	@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+
+
+
+Abbreviations
+The HTML element provides markup for abbreviations or acronyms, like WWW or HTTP. 
+Bootstrap styles <abbr> elements with a light dotted border along the bottom and 
+reveals the full text on hover (as long as you add that text to the <abbr> title 
+attribute). 
+To get a slightly smaller font size Add .initialism to <abbr>.
+
+<abbr title="World Wide Web">WWW</abbr><br>
+<abbr title="Real Simple Syndication" class="initialism">RSS</abbr>
+
+Addresses
+Using <address> tag you can display the contact information on your web page. 
+Since the <address> defaults to display:block; you’ll need to use tags to add line 
+breaks to the enclosed address text.
+
+<address>
+ <strong>Some Company, Inc.</strong><br>
+ 007 street<br>
+ Some City, State XXXXX<br>
+ <abbr title="Phone">P:</abbr> (123) 456-7890
+</address>
+<address>
+ <strong>Full Name</strong><br>
+ <a href="mailto:something@somedomain.com">mailto@somedomain.com</a>
+</address>
+
+Blockquotes
+You can use the default <blockquote> around any HTML text. 
+Other options include, adding a <small> tag for identifying the source of the quote and 
+right-aligning the blockquote using class .pull-right. The following example 
+demonstrates all these features:
+
+
+<blockquote class="pull-right">
+This is a blockquote aligned to the right.
+<small>Someone famous in 
+<cite title="Source Title">Source Title</cite></small>
+</blockquote>
+
+CSS transitions enable smooth changes to property values over a specified duration, 
+allowing for a more dynamic and engaging user experience. They allow you to control 
+the timing and speed of changes, enhancing interactivity by animating states of an 
+element instead of having changes occur abruptly.
+
+In CSS, most properties that can change from one value to another can be transitioned. 
+Here are some commonly used properties that support transitions:
+
+Commonly Transitionable Properties
+Color Properties
+
+color
+background-color
+border-color
+outline-color
+Size and Spacing
+
+width
+height
+margin
+padding
+line-height
+Positioning
+
+top
+right
+bottom
+left
+transform (for scaling, skewing, rotating, etc.)
+Opacity and Visibility
+
+opacity
+Transformations
+
+transform (includes translate, scale, rotate, etc.)
+Other Visual Effects
+
+box-shadow
+filter
+border-width
+border-radius
+
+
+Not Transitionable Properties
+While many properties can be transitioned, some cannot be animated:
+
+display (e.g., transitioning from none to block)
+position (from relative to absolute, etc.)
+float
+z-index
+overflow
+
+The transition property is a shorthand property for the four transition properties: 
+  transition-property 
+  transition-duration 
+  transition-timing-function 
+  transition-delay 
+  
+  The transition property is used to specify the transition effect for an element. 
+  The transition effect is not visible until the property changes. 
+  
+  The transition-property property specifies the name of the CSS property the 
+  transition effect is for. 
+  The transition-duration property specifies how many seconds (s) or milliseconds 
+  (ms) a transition effect takes to complete. 
+  The transition-timing-function property specifies the speed curve of the transition 
+  effect. 
+  The transition-delay property specifies when the transition effect will start. 
+
+CSS animations allow you to animate transitions between different CSS styles 
+using the @keyframes rule. Keyframes define the styles at various points in 
+the animation sequence, specifying what styles the element will have at the start, 
+during, and end of the animation. To create an animation, you first define the 
+keyframes and then apply the animation to an element using the animation property.
+
+Creating a simple CSS animation involves defining keyframes and applying the animation 
+to an element. Here’s a step-by-step guide:
+
+1. Define Keyframes
+You use the @keyframes rule to specify the animation steps. For example, let's create 
+an animation that changes the color of an element from red to blue:
+
+@keyframes colorChange {  
+    0% {  
+        background-color: red;  
+    }  
+    100% {  
+        background-color: blue;  
+    }  
+}
+
+2. Apply the Animation to an Element
+You can then apply this animation to an HTML element using the animation property.
+
+.box {  
+    width: 100px;  
+    height: 100px;  
+    background-color: red;  
+    animation: colorChange 2s infinite;  
+}
+
+<div class="box"></div>
+
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>CSS Animation Example</title>  
+    <style>  
+        @keyframes colorChange {  
+            0% {  
+                background-color: red;  
+            }  
+            100% {  
+                background-color: blue;  
+            }  
+        }  
+
+        .box {  
+            width: 100px;  
+            height: 100px;  
+            background-color: red;  
+            animation: colorChange 2s infinite;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="box"></div>  
+</body>  
+</html>
+@Keyframes 
+
+<div></div>
+
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  50% {top: 100px !important;} /* ignored */
+  to {top: 200px;}
+}
+</style>
+
+@keyframes mymove {
+  0%   {top: 0px; left: 0px; background: red;}
+  25%  {top: 0px; left: 100px; background: blue;}
+  50%  {top: 100px; left: 100px; background: yellow;}
+  75%  {top: 100px; left: 0px; background: green;}
+  100% {top: 0px; left: 0px; background: red;}
+}
+
+@keyframes mymove {
+  0%   {top: 0px; background: red; width: 100px;}
+  100% {top: 200px; background: yellow; width: 300px;}
+}
+
+@keyframes mymove {
+  0%   {top: 0px;}
+  25%  {top: 200px;}
+  75%  {top: 50px}
+  100% {top: 100px;}
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Session 5 : 
+Javascript 
+		is a programming language initially designed to interact with 
+		elements of web pages.
+		
+	3 Main Parts : 
+		Core Functionality - ECMASCRIPT  - ES5 / ES6 / ESNEXT 
+		Document Object Model (DOM) - 
+			provides interfaces for interacting with elements on web pages.
+		Browser Object Model (BOM) - 
+			provides the Browser API interacting with the web browser.
+
+	JIT - Just - In - Time Compiler
+
+	Brendan Eich - 1995 - Netscape developer 
+	Mocha 
+	Live Script 
+	Java Script 
+
+JavaScript is a programming language that adds interactivity to web pages. 
+	It has many features, including: 
+	Dynamic: JavaScript is a dynamic language, meaning that variables can be 
+	assigned and reassigned values of any type. 
+	Object-oriented: JavaScript supports object-oriented programming with 
+	object prototypes and classes. 
+	Functional: JavaScript supports functional programming because functions 
+	can be created via expressions and passed around like other objects. 
+	Syntax: JavaScript's syntax is based on the Java and C languages. 
+	Cross-platform: JavaScript is a cross-platform language. 
+	Free: JavaScript is free to use and is already running in most browsers.
+
+Here's some information about the history of JavaScript: 
+
+Creation
+Brendan Eich invented JavaScript in 1995 while working at Netscape Communications 
+Corporation. It was originally called Mocha, then LiveScript, before finally being 
+named JavaScript. 
+
+Development
+Eich wrote the language in just 10 days. It was developed for Netscape 2, and became 
+the ECMA-262 standard in 1997. 
+
+Adoption
+Internet Explorer (IE4) was the first browser to support ECMA-262 Edition 1 (ES1). 
+The Mozilla foundation continued to develop JavaScript for the Firefox browser. 
+
+Purpose
+JavaScript was designed to add interactivity to web pages and enable developers to 
+create dynamic content. 
+
+Name
+The name JavaScript was chosen to interest Java programmers, and 
+because "script" was a trendy term for lightweight programs at the time.
+
+JavaScript was standardized in 1997 by the European Computer Manufacturers Association 
+(ECMA) as ECMA-262. The first edition of this standard was published in June 1997.
+
+ECMAScript 5, also known as ES5, was standardized in December 2009 as part of the 
+ECMA-262 specification. It introduced several important features and improvements 
+to the JavaScript language, including strict mode, support for JSON, new Array methods, 
+and improvements to Object handling, among others. ES5 is widely supported in all 
+modern browsers.
+
+ECMAScript 6, commonly known as ES6 or ECMAScript 2015, was standardized in June 2015. 
+It introduced significant enhancements to the JavaScript language.
+
+	ECMA - European Computer Manufacturers Association 
+	ECMA - 262 - TC 39 
+	ECMASCRIPT - ES5 / ES6 
+
+	ES5 - 2009 
+	ES2015 - ES6 - Advanced JavaScript
+
+	JavaScript should be written inside <script> element
+	in HTML. 
+	<script>
+	</script>
+
+	External JavaScript files has to save with the extension 
+	.js and include in the srcipt with in src attribute.
+	<script src = "script.js"></script>
+
+	<script>   .js
+		- Internal Script
+		- External Script
+
+	Javascript Syntax -
+		whitespaces - ignores whitespaces
+		statements  (;)
+		identifiers  (a-z or A-Z), (_), ($) followed by (a-z, A-Z), numbers(0-9), (_),($)
+		comments - ignores the comments - single line -// - block comments /*  */
+		blocks - sequence of zero or more simple statements - {}
+		expressions - is peice of code evaluates to value.
+		keywords - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar
+
+whitespaces : 
+	refers to characters that provide the space between other characters.
+	Space 
+	Newline
+	Tab 
+	JavaScript engine ignores whitespaces. we can use whitespaces
+	to format the code to make it easy to read and maintain.
+	var a = 10;
+	if(true){
+		//
+	}
+
+Statements : 
+	A Statement is a code that declares a Variable or instructs the
+	JavaScript engine to do a task.
+
+	A Simple statement is terminated by a semicolon (;)
+	semicolon is optional.
+
+	var a = 10;
+	
+
+Identifiers : 
+	An identifier is a name we choose for variables,parameters, 
+	functions, classes etc.,
+	An identifier name starts with (a-z, or A-Z), an underscore(_)
+	, or a dollar sign ($)  and is followed by a sequence of characters
+	including (a-z,A-Z,0-9,_,$);
+
+	
+
+Blocks 
+	A block is a sequence of zero or more simple statements.
+	A block is delimited by a pair of curly brackets {}
+
+	if(true){
+		 statements
+	}
+
+Comments : 
+	Comments allow to add notes or hints to JavaScript code.
+	when executing the code, the JavaScript engine ignores the comments.
+
+	2 types of comments 
+	single-line comments - // (2 forward slashes)
+	Block Comments - /* statements  */
+
+Expression : 
+	An expression is a piece of code that evaluates to value. 
+
+	2 + 1 
+
+keywords & Reserved Words :
+
+	
+	
+	
+
+
+
+
+
+
+Session 6 :
+
+	Java script Variables : 
+	A Variable is a label that References a value like a number 
+	or string or of any datatype
+
+	To Declare a Variable, we use  
+		var keyword / Reserved word
+	followed by identifier.
+	
+	var message; 
+	var a; 
+	var condition;
+
+		ES6	
+			let 
+			const 
+		var a 
+		var msg 
+
+	A Variable name can be any valid identifier.By default, the 
+	Variable has a special value - undefined if we have not 
+	assigned a value to it.
+
+	default value will be undefined 
+
+	Variable Name rules :
+		Variable names are case-sensitive.  
+
+				var message; 
+				var Message;
+
+				var msg;
+				var mSg; 
+		Variable names can only contain letters, numbers,
+		underscores, or dollar signs and cannot contain spaces.
+		(a-z / A-Z),(0-9),$,_ but spaces not allowed 
+
+		Variable names must begin with a letter, an underscore(_)or $
+
+		Variable names Cannot use reserved keywords
+
+	JavaScript has the primitive data types : 
+	Data Types : 
+		1.null
+		2.undefined
+		3.boolean 
+		4.number    
+		5.string 
+		6.symbol (ES6)
+		7.bigint (ESNext)
+
+		and Complex data type : object 
+
+		var a = 20;
+		var message = "Hello This is a String";
+		var b = 3.45678;
+		var condition = true;
+
+		typeof operator is used to get the data type of a Variable.
+		console.log(a, message, b, condition);
+		console.log(typeof a, typeof mesage, typeof b, typeof condition);
+
+		when we validate a number if it is not a number we will get 
+		NaN (Not a Number)
+
+	Type Coercion refers to the process of automatic or implicit conversion of 
+	values from one data type to another.
+
+	string 
+	console.log('I\'m a software Developer')
+		\
+		\r\n
+		\n
+		\t
+
+	Objects : 
+		Arrays 
+		Objects 
+	
+JavaScript Operators : 
+Arithmetic Operators
+			+ 
+			-
+			* (Asterik )
+			/
+
+		Remainder Operator (modulas)
+			% 
+			var a = 20;
+			var b = 6;
+
+			console.log(a % b);// 2
+
+Assignment Operators :
+			=             a = b
+			+=            a += b            a = a + b
+			-=			  a -= b 			a = a - b	
+			*=			
+			/=
+			%=
+			&=    AND
+			|=    OR
+			
+
+Unary Operators : works on a value
+			+x   - convert a value into a number
+			-x   - covert a value and negate it 
+			++x Pre increment
+			--x Pre Decrement
+			x++ Post increment
+			x-- Post Decrement
+
+
+Session 7: 
+Comparision Operators //result will be a boolean value 
+			>
+			<
+			<=
+			>=  
+			==  equal 
+			!=  not equal
+			=== strictly equal 
+			!== strictly not equal 
+
+			var a = '20';
+			var b = 20;
+			console.log(a === b);// false
+			console.log(a == b); // true
+
+Assignment : Number and String methods - Document 1-7 pages 
+
+
+
+Logical Operators
+				! (Logical NOT )  (!!) Double Negation 
+				|| (Logical OR)
+				&& (Logical AND)
+
+		console.log(!undefined); // true
+		console.log(!null); // true
+		console.log(!20); // false
+		console.log(!0); // true
+		console.log(!NaN); // true
+		console.log(!{}); // false
+		console.log(!''); // true
+		console.log(!'Text'); // false
+		console.log(!false); // true 
+		console.log(!true); // false
+
+		Logical OR ||
+
+		a    		b     		a || b 
+		true 		true		true
+		true 		false		true 
+		false		true 		true
+		false		false		false
+
+		a    		b     		a && b 
+		true 		true		true
+		true 		false		false 
+		false		true 		false
+		false		false		false
+
+
+
+
+
+
+		var a = true;
+		var b = false;
+
+		console.log(a || b);
+		console.log(a && b);
+
+
+		var a = 10 && 20;
+		console.log(a);
+		var b = 30 || 40;
+		console.log(b);
+
+		var a, b = 3 && 4;
+		a += b; // a = a + b   
+
+		console.log(a,b); // NaN 4
+
+		var a = 3 && 4, b = 5 || 6;
+		console.log(a + b); // 9 
+
+
+Logical Assignment Operators
+			||=
+			&&=
+			??= nullish coalescing assignment (ES Next)
+
+			x ??= y 
+			x ?? (x = y)
+			** Objects 
+
+
+			var title = "Something";
+			title ||= 'untitled';
+
+			console.log(title);
+
+Exponentiation Operators 
+			**
+			**=    -> x **= y ---> x = x ** y;
+
+Session 8: 	
+
+Conditional Statements : 
+
+		if
+		if..else
+		if.. else if.. else
+
+		if(condition)
+			statement;
+
+		if(condition){
+			// statements 
+		}
+
+	var a = 30;
+	if(a == 20)
+		{
+			console.log('Equal to 20');
+		}
+	else    
+		{
+			console.log("Not Equals to 20");
+		}
+
+Example : 
+	var a = 60;
+	if(a == 20)
+	{
+		console.log('Equal to 20');
+	}
+	else if(a == 30)   
+	{
+		console.log("Equals to 30");
+	}
+	else if(a == 40)   
+	{
+		console.log("Equals to 40");
+	}
+	else if(a == 50)   
+	{
+		console.log("Equals to 50");
+	}
+	else    
+	{
+		console.log("Not Equals to 20 /30/ 40/ 50");
+	}
+		
+Assignment :  height 1.72, weight 70 - bmi = weight / (height * height);
+weight status : bmi < 18.5 --> under weight 
+weight status : bmi >= 18.5 && <= 24.9 --> Healthy weight 
+weight status : bmi >= 25 && <= 29.9 --> Over weight 
+weight status : bmi  Obesity 
+
+same with Switch 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Conditional Ternary Operator : "?:"
+
+( condition ) ? True Statements : False Statements ;
+condition is an expression, if the the condition is true , True statements 
+will execute else False statements will execute.
+
+	Example : 
+	var age = 13;
+	var message;
+
+	if(age >= 16 ){
+	     message = 'Above 16';
+	 }else{
+	     message = 'Below 16';
+	 }
+
+	age >= 16 ? (message = 'Above 16') : (message = 'Below 16');
+
+	console.log(message);
+
+	
+
+
+Switch 
+	switch (expression){
+		case value1 : 	
+				statement1;
+				break;
+		case value2 : 	
+				statement2;
+				break;
+		default:
+				statement;
+	}
+
+Switch statement evaluates an expression, compares its result with case 
+values, and executes the statement associated with the matching case value
+
+var day = 4;
+
+var dayName;
+
+switch(day) {
+    case 1 : 
+        dayName = "Sunday";
+        break;
+    case 2 : 
+        dayName = "Monday";
+        break;
+    case 3 : 
+        dayName = "Tuesday";
+        break;
+    case 4 : 
+        dayName = "Wednesday";
+        break;
+    case 5:
+        dayName = "Thursday";
+        break;
+    case 6:
+        dayName = "Friday";
+        break;
+    case 7:
+        dayName = "Saturday";
+        break;
+    default:
+        dayName = "Invalid Number";
+    
+}
+
+console.log(dayName);
+
+var weight = 55;
+var height = 1.72;
+var bmi = weight / (height * height);
+var category = "";
+switch (true) {
+  case bmi < 18.5:
+    category = "Underweight";
+    break;
+  case bmi >= 18.5 && bmi < 24.9:
+    category = "Normal weight";
+    break;
+  case bmi >= 25 && bmi < 29.9:
+    category = "Overweight";
+    break;
+  case bmi >= 30:
+    category = "Obesity";
+    break;
+  default:
+    category = "Invalid BMI";
+}
+console.log("bmi :", bmi.toFixed(2), category);
+
+Assignment : 
+	year - 2016 
+	month  - 2 or "feb"
+
+	Calculate no. of days in month  // 29 
+
+	leap year - 
+	 if(year % 4 == 0 && !(year % 100 == 0) || year % 400 == 0)
+	 {
+		29
+	 }else{
+		28 
+	 }
+
+
+
+
+
+
+
+
+
+
+
+Session 9: 
+Complex Data Type : Object 
+	Lists of 2 types : 
+		Ordered Lists
+		UnOrdered Lists 
+
+	Array 
+		is an ordered list of values. 
+		each value is called an element specified by an Index.
+
+	var arr = new Array() // Array Constructor 
+
+	var arr = new Array(1,2,3,4,5,5,6,7,8,8);
+	var arr = [1, 2, 3, 4, 5, 5, 6, 7, 8, 8]; // array literal notation 
+
+	length is property of Array - no of elements in the list 
+	index starts from 0 
+	console.log(arr.length); // 10 
+	console.log(typeof arr); // object 
+
+	
+	getting Element : arrayName[index]
+	var arr = [1, 2, 3, 4, 5, 5, 6, 7, 8, 8];
+	console.log(arr[2]); // 3
+	var arr = [1,'a',true,'Hello',234,5.6,false,undefined,null];
+	console.log(arr[5]); // 5.6
+
+
+	Adding  element(s) to end of the list 
+		push()
+			var arr = [1, 2, 3, 4, 5];
+			console.log(arr);
+			arr.push(6);
+			console.log(arr); // [1, 2, 3, 4, 5, 6]
+	Adding  element(s) to the beginning of the list 
+		unshift()
+			var arr = [1, 2, 3, 4, 5,];
+			console.log(arr);
+			arr.unshift(6);
+			console.log(arr); //[6, 1, 2, 3, 4, 5]
+	Removing an element from the end of the list 
+		pop()
+			var arr = [1, 2, 3, 4, 5,];
+			console.log(arr);
+			arr.pop();
+			console.log(arr);//[1, 2, 3, 4]
+
+	Removing an element from beginning of the list 
+		shift()
+			var arr = [1, 2, 3, 4, 5,];
+			console.log(arr);
+			arr.shift();
+			console.log(arr); // [2, 3, 4, 5]
+
+	Updating 
+		var arr = [1, 2, 3, 4, 5,];
+		console.log(arr);
+		console.log(arr.indexOf(5));
+		arr[arr.indexOf(5)] = 10;
+		console.log(arr); //[1,2,3,4,10]
+
+		indexOf(val) - index of the element in the list 
+
+	Deleting 
+			var arr = [1, 2, 3, 4, 5,];
+			console.log(arr);//[1, 2, 3, 4, 5,]
+			delete arr[4];
+			console.log(arr);//[1, 2, 3, 4, empty]
+			delete arr[arr.indexOf(2)];
+			console.log(arr);//[1, empty, 3, 4, empty]
+
+	
+	check if the value is Array or not 
+		Array.isArray()
+
+		var arr = [1, 2, 3, 4, 5,];
+		console.log(Array.isArray(arr)); // true
+		var a = 20;
+		console.log(Array.isArray(a)); // false
+
+
+var arr = [1,2,2,2,4,4,4,5,5,5,5,5,5,6,6,6];
+repeated {
+	noof2 : 3,
+	noof4 : 3
+}
+var arr = [1,1,1,1,1,, 2, 2, 2, 4, 4, 4, 5, 5, 5, 5, 5, 5, 6, 6, 6];
+      var counts = {};
+      for (var i = 0; i < arr.length; i++) {
+        var num = arr[i];
+        if (counts[num]) {
+          counts[num] = counts[num] + 1;
+        } else {
+          counts[num] = 1;
+        }
+      }
+      console.log(arr);
+      console.log(counts);
+
+
+
+
+Session 9 : 
+	Objects are UnOrdered list contains a collection of properties and 
+	each property is key-value pair.
+
+		UnOrdered Lists 
+		key - value pairs 
+		key - value - property 
+
+	Literal Notation :
+		var obj = {}
+		var person = {
+			firstName : 'Krishna',
+			lastName : 'Mohan',
+			age : 23,
+			condition : true,
+			marks : [20,30]
+		}
+
+		console.log(person);
+
+	The Key of a property can be a string. and the value of a property 
+	can be any value - string, number, array, object, boolean and even
+	a function. 
+
+	JavaScript provides with many ways to create, an object.
+
+	The most commonly used one is to use the object literal notation.
+	when an object has multiple properties, we use comma (,) to 
+	separate them.
+
+Accessing Properties : 
+	
+		To Accesss a property of an object, we use one of the 2 notations: 
+				dot notation 
+				array-like notation 
+
+		ObjectName.propertyName 
+		ObjectName['propertyName']
+		Example : 
+		var person = {
+			firstName : 'Krishna',
+			lastName : 'Mohan'
+		}
+		console.log(person.firstName);
+
+		ObjectName['propertyName']
+		var person = {
+			firstName: "Krishna",
+			age: 23,
+			};
+
+		console.log(person['firstName']);
+
+		Example : 
+		var person = {
+			firstName : 'Krishna',
+			lastName : 'Mohan',
+			address : {
+				street : {
+					door : '234'
+				}
+			}
+		}
+		console.log(person.address['street'].door);
+		console.log(person['lastName']);
+
+		Updating the property of an Object : 
+		Example : 
+		var person = {
+			firstName : 'Krishna',
+			lastName : 'Mohan'
+		}
+
+		person.firstName = "Abhinav";
+
+		console.log(person);
+
+		Creating the Object property : 
+		
+		var person = {
+				firstName : 'Krishna',
+				lastName : 'Mohan'
+			}
+
+			person.age = 24;
+
+		console.log(person);
+-------------------------------------------------
+		Deleting a property : 
+		delete ObjectName.propertyName
+
+		var person = {
+			firstName : 'Krishna',
+			lastName : 'Mohan'
+		}
+
+		delete person.lastName;
+		console.log(person);
+-----------------------------------------------------
+		Checking if a property exists : 
+
+		in operator check if a property exists in an object 
+
+		propertyName in ObjectName
+
+		Example : 
+		var person = {
+			firstName : 'Krishna',
+			lastName : 'Mohan'
+		}
+		console.log('firstName' in person); // true
+		console.log('age' in person); // false
+------------------------------------------------------
+	person - name age 
+	marks - [30,40,50];
+	total 
+	var person = {
+		name : "Krishna",
+		age : 23
+	};
+	person.marks = [30,40,50];
+
+	console.log(person);
+	for(var i = 0; i < person.marks.length; i++){
+		person.total += person.marks[i];
+	}
+
+	console.log(person);
+
+
+
+
+	Loops
+
+	while statement creates a loop that executes a block as long as 
+	a condition evaluates to true.
+
+	while(expression){
+		// statements 
+	}
+
+		var count = 1;
+		while(count < 10){
+			console.log(count);   // 1 3 5 7 9
+			count += 2;
+		}
+----------------------------------
+		var count = 10;
+
+		while(count > 0 ){
+			console.log(count); // 10 8 6 4 2 
+			count -= 2;
+		}
+----------------------------------------------------
+var students = [
+    {
+        name : "abc",
+        age : 23,
+        marks : [30,40,50,60]
+    },
+    {
+        name : "bcd",
+        age : 22,
+        marks : [40,40,60,60]
+    },
+    {
+        name : "cde",
+        age : 23,
+        marks : [70,30,50,60]
+    },
+    {
+        name : "efg",
+        age : 22,
+        marks : [30,30,30,30]
+    },
+
+];
+
+console.table(students);
+var i = 0;
+while(i < students.length){
+    var total = 0;
+    var avg = 0;
+    var j = 0;
+    while(j < students[i].marks.length){
+        total += students[i].marks[j];
+        j++;
+    }
+    students[i].total = total;
+    students[i].avg = total/students[i].marks.length;
+    i++;
+}
+console.table(students);
+--------------------------------------------------
+	dowhile statement creates a loop that executes a block until 
+	a condition evaluates to false.
+
+	do{
+		// statement
+	} while(expression);
+	
+
+	var count = 1;
+	do{
+		console.log(count);   
+		count += 2;
+	}while(count < 10)
+	----------------------------
+
+	var count = 10;
+
+	do{------------------------------------------
+
+		console.log(count);
+		count -= 2;
+	}while(count > 0 );
+------------------------------------------
+
+Assignment : generate evenNumbers and oddNumbers Arrays 
+
+var students = [
+    {
+        name : "abc",
+        age : 23,
+        marks : [30,40,50,60]
+    },
+    {
+        name : "bcd",
+        age : 22,
+        marks : [40,40,60,60]
+    },
+    {
+        name : "cde",
+        age : 23,
+        marks : [70,30,50,60]
+    },
+    {
+        name : "efg",
+        age : 22,
+        marks : [30,30,30,30]
+    }
+];
+var i = 0;
+do {
+  if (students.length > 0) {
+    var total = 0;
+    var avg = 0;
+    var j = 0;
+    do {
+      total += students[i].marks[j];
+      j++;
+    } while (j < students[i].marks.length);
+    students[i].total = total;
+    students[i].avg = total / students[i].marks.length;
+    i++;
+  }else{
+    console.log("No Data ");
+  }
+} while (i < students.length);
+console.table(students);
+-----------------------------------------------
+
+var products = [
+	{
+		productID : 1,
+		name : "Product 1",
+		price : 30,
+		qty : 200
+	},
+	{
+		productID : 2,
+		name : "Product 2",
+		price : 40,
+		qty : 250
+	},
+	{
+		productID : 3,
+		name : "Product 3",
+		price : 30,
+		qty : 200
+	}
+]
+
+
+
+
+
+
+
+-----------------------------------------------------
+
+	forloop
+		creates  a loop with 3 optional expressions 
+		
+		syntax : 
+		for (initializer; condition; iterator){
+			// statements 
+		}
+		
+		initializer - once the loop starts 
+			The for statement executes the initializer only once the loop
+			starts. we declare and initialize a local loop Variable in the 
+			initializer.
+
+		condition - boolean expression  that deteremines the iteration 
+			The Condition is a boolean expression that determines whether
+			the for loop should execute the next iteration. 
+
+			The for statement evaluates the condition before each iteration.
+			if the condition is true, it executes the next iteration else
+			it will end the loop.
+
+		iterator - executes in each iteration 
+			The for statement executes the iterator after each iteration.
+
+
+		for( ; ; ){
+
+		}
+		
+		Example : 
+		for(var i = 0; i < 10; i++){
+			console.log(i);
+		}
+
+		--------------------------
+		// var sum = 0;
+		// for(var i = 0; i <= 9; i++){
+		//     sum += i;
+		// }
+		// console.log(sum);
+
+		var sum = 0;
+		for(var i = 0; i <= 9; i++,  sum += i);
+		console.log(sum);
+	---------------------------------------
+
+	Assignment : 1 to 100 numbers divided by 3 and 5. array push result in array 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	break statement 
+		is used to terminate a nested loop.
+
+		for(var i = 0; i < 10; i++){
+			if(i == 5){
+				break;
+			}
+			console.log(i);
+		}
+	----------------------------------------------
+	var students = [
+    {
+        name : "abc",
+        age : 23,
+        marks : [30,40,50,60]
+    },
+    {
+        name : "bcd",
+        age : 22,
+        marks : [40,40,60,60]
+    },
+    {
+        name : "cde",
+        age : 23,
+        marks : [70,30,50,60]
+    },
+    {
+        name : "efg",
+        age : 22,
+        marks : [30,30,30,30]
+    }
+];
+for(var i = 0; i < students.length; i++){
+    var total = 0;
+    var avg = 0;
+    var result = "";
+    for(var j = 0; j < students[i].marks.length; j++){
+        total += students[i].marks[j];
+        
+    }
+    for(var j = 0; j < students[i].marks.length; j++){
+        if(students[i].marks[j] > 30){
+            result = "PASS"
+        }else{
+            result = "FAIL";
+            break;
+        }
+    }
+    students[i].total = total;
+    students[i].avg = total/students[i].marks.length;
+    students[i].result = result;
+}
+
+console.table(students);
+----------------------------------------------------
+	continue statement 
+		terminates the execution of the statement in the current iteration of a loop
+		such as in for,while and do..while loops and Immediately continues to the 
+		next iteration.
+
+	
+	for(var i = 0; i < 10; i++){
+    
+		if(i % 2 === 0){
+			continue;
+		}
+		console.log(i);
+	}
+	
+
+
+
+
+
+	const users = [
+    { id: 1, name: "Anand", email: "anand@example.com" },
+    { id: 2, name: "Balu" }, // No email, should be skipped
+    { id: 3, name: "Chinna", email: "chinna@example.com" },
+    { id: 4, name: "Dora" }, // No email, should be skipped
+    { id: 5, name: "Eric", email: "eric@example.com" }
+  ];
+  
+  for (var i = 0; i < users.length; i++) {
+    // Skip users without an email
+    if (!users[i].email) {
+      continue;
+    }
+    console.log("Processing user: "+users[i].name +", Email: "+ users[i].email);
+  }
+  
+-------------------------
+
+	label :
+	we can use the label for later use. 
+	The label can be any valid identifier.
+	Once defining the label, we can reference it in the break or 
+	continue statement.
+
+	Example : 
+	outer : for(var i = 0; i < 4; i++){
+			for(var j = 0; j < 4 ; j++){
+				if(i + j == 3) continue outer;
+				console.log(i,j);
+			}
+		}
+
+Assignment : between 1 and 10 --> numbers resulting result 10 
+
+
+*
+* *
+* * *
+* * * *
+* * * * *
+
+
+
+
+
+
+
+Assignments - Arrays,loops,objects 
+arr = [2,1,4,3,5,6,1,2,4,5,6] - sort without using sort Method
+labal 
+anina
+amma 
+check whether the word is palindrome or not 
+
+
+
+
+Session 10:
+	functions 
+		To avoid repeating the same code all over the places, we can use a function to 
+		wrap that code and reuse it.
+
+		function is a block of code to implement code reusability.
+	 
+
+	syntax: 
+
+	function fnName(parameters){
+		// function body 
+	}
+
+	To declare an ES5 function, we use the function keyword, followed by the function name,
+	a list of parameters in parenthesis (), and function body follows in {}.
+
+
+	To use a function, we need to call it. calling a function is also known
+	as invoking a function.
+
+	To call a function, we use its name followed by arguments enclosing 
+	in the parenthesis
+
+	fnName(arguments);
+
+
+
+
+
+
+
+
+
+
+	function greet(str){ // parameters
+    console.log("Hello " + str);
+	}
+
+	greet("Krishna"); // arguments 
+	greet("Abhinav");
+
+	When declaring a function, we specify the parameters, when calling a 
+	function, we pass the arguments that are corresponding to the 
+	parameters.
+-----------------------------------------------
+	function as expression
+
+	var add = function(a,b){
+
+	}
+---------------------------------
+	function greet(name){
+    console.log("Hello " + name);
+	}
+
+	greet("Abhi");
+
+	greet("Balu");
+
+	greet("Ciya");
+---------------------------------
+
+
+function sum(a,b){
+    console.log(a + b);
+}
+
+sum(2,3);
+sum(4,5);
+sum(7,8);
+---------------------------------
+Return a value 
+	Inside the function declaration, we use return statement to return a value from a 
+	function explicitly.
+
+function sum(a,b){
+    return a + b;
+}
+
+var x = sum(2,3);
+var y = sum(4,5);
+var z = sum(7,8);
+
+console.log(x,y,z);
+---------------------------
+arguments 
+	we can access an object called arguments that represents the named arguments of the 
+	function.
+
+	The arguments object behaves like an array though it is not an instance of the 
+	Array type.
+
+function add(){
+    var sum = 0;
+    console.log(arguments);
+    for(var i =0; i < arguments.length; i++){
+        sum += arguments[i];
+    }
+    return sum;
+}
+
+console.log(add(1,2,3));
+
+console.log(add(5,6,8,9,2,4,2));
+
+console.log(add(7,2));
+
+Assignment : 
+	multiple(2,10);
+	[2,1,2]
+	[2,2,4]
+	[2,3,6]
+
+
+function strchar(){
+    console.log(arguments);
+    for(var i = 0; i < arguments[0].length; i++){
+        console.log(arguments[0][i]);
+    }
+}
+
+strchar("Krishna");
+
+
+// Assignment 
+	doSomething(2,"Hello",4,true,"Krishna");
+	o/p : {num : 6 
+			bool : [true]
+			str : ['H','e','l','l','o','K','r','i','s','h','n','a']
+			}
+
+
+
+
+
+---------------------------
+
+
+
+-----------------------
+Passing function to another function 
+
+function average(a,b,fn){
+    return fn(a,b)/2;
+}
+
+function add(a,b){
+    return a + b;
+}
+
+var result = average(10,20,add);
+
+console.log(result);
+--------------------------------
+
+Assignment : 
+	cmToIn
+	inToCm
+
+	convert(fn,10)
+
+	inch = 2.54cms
+	cm = inch/2.54
+
+	convert(cmToIn,10)
+	10/2.54
+	convert(inToCm,10)
+	2.54*10
+-------------------------------
+
+
+
+
+
+
+
+
+function cmToIn(cm){
+ return cm/2.54;
+}
+
+function inToCm(inch){
+ return inch * 2.54;
+}
+
+function convert(fn,val){
+ return fn(val);
+}
+
+console.log(convert(cmToIn,10));
+console.log(convert(inToCm,10));
+
+----------------------------------
+Anonymous function
+ functions without name 
+
+ var greet = function(){
+    console.log('Anonymous function');
+
+}
+
+greet();
+
+--------------
+IIFE / Self Invoking Functions 
+
+Immediately Invoked Function Execution 
+
+(function(){
+    console.log("I am from Anonymous");
+})();
+
+
+
+
+
+
+
+--------------------------
+Recursive functions 
+
+
+function countDown(fromNumber){
+    console.log(fromNumber);
+
+    var nextNumber = fromNumber - 1;
+
+    if(nextNumber > 0){
+        countDown(nextNumber);
+    }
+}
+
+countDown(5);
+----------------------------
+
+Assignment : 
+	sum(10)
+	calculate the sum of n natural numbers using recursive functions 
+
+---------------------------
+
+
+
+
+
+
+
+
+
+
+function fibonacciSeries(n) {
+    var fibonacci = [0, 1];
+
+    for (var i = 2; i < n; i++) {
+        fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+    }
+
+    return fibonacci.slice(0, n);
+}
+
+
+console.log(fibonacciSeries(10)); // Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+-------------------------------------------------------
+
+
+
+
+
+
+
+function default parameters 
+
+
+----------------------------
+
+
+
+
+
+
+
+
+
+
+
+function fibonacciSeries(numTerms) {
+    var fibArray = [];
+    if (numTerms === 1) {
+        fibArray.push(0);
+    } else if (numTerms === 2) {
+        fibArray.push(0, 1);
+    } else {
+        fibArray.push(0, 1);
+        for (var i = 2; i < numTerms; i++) {
+            fibArray.push(fibArray[i - 1] + fibArray[i - 2]);
+        }
+    }
+    return fibArray;
+}
+
+// Example usage:
+var numTerms = 10;
+console.log("Fibonacci series with " + numTerms + " terms: " + fibonacciSeries(numTerms));
+-------------------------------------------------------
+
+Array Methods 
+--------------
+Adding or Removing Elements at Any Position
+
+The splice() method allows you to add or remove elements from any index 
+
+This method takes three parameters:
+The first parameter is the index at which to start splicing the array, it is required;
+The second parameter is the number of elements to remove 
+(use 0 if you don't want to remove any elements), it is optional;
+The third parameter is a set of replacement elements, it is also optional.
+
+var colors = ["Red", "Green", "Blue"];
+var removed = colors.splice(0,1); // Remove the first element 
+console.log(colors); // Prints: Green,Blue 
+console.log(removed); // Prints: Red (one item array) 
+console.log(removed.length); // Prints: 1
+removed = colors.splice(1, 0, "Pink", "Yellow"); // Insert two items at position one 
+console.log(colors); // Prints: Green,Pink,Yellow,Blue 
+console.log(removed); // Empty array
+console.log(removed.length); // Prints: 0
+removed = colors.splice(1, 1, "Purple", "Voilet"); // Insert two values, remove one 
+console.log(colors); //Prints:Green,Purple,Voilet,Yellow,Blue 
+console.log(removed); // Prints: Pink (one item array) 
+console.log(removed.length); // Prints: 1
+
+----------------------------------------------------
+Creating a String from an Array join() method
+
+Used to create a string by joining the elements of an array. 
+This method takes an optional parameter which is a separator string that is added in between each element. 
+If you omit the separator, then JavaScript will use comma (,) by default.
+
+var colors = ["Red", "Green", "Blue"]; 
+console.log(colors.join()); // Prints: Red,Green,Blue 
+console.log(colors.join("")); // Prints: RedGreenBlue 
+console.log(colors.join("-")); // Prints: Red-Green-Blue 
+console.log(colors.join(", ")); // Prints: Red, Green, Blue toString() method
+
+You can also convert an array to a comma separated string using the toString(). 
+var colors = ["Red", "Green", "Blue"];
+console.log(colors.toString()); // Prints: Red,Green,Blue
+----------------------------------------------------
+Extracting a Portion of an Array
+slice() method
+Used to extract a portion of an array (i.e. subarray).
+This method takes 2 parameters: 
+like arr.slice(startIndex, endIndex). 
+var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"]; 
+var subarr = fruits.slice(1, 3);
+console.log(subarr); // Prints: Banana,Mango 
+Note:
+If endIndex parameter is omitted, all elements to the end of the array are extracted.
+You can also specify negative indexes in this case the slice() method extract the elements 
+from the end of an array, rather then the begining.
+Example
+var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"]; 
+console.log(fruits.slice(2)); // Prints: Mango,Orange,Papaya 
+console.log(fruits.slice(-2)); // Prints: Orange,Papaya
+
+------------------------------------------------------------------
+Merging Two or More Arrays concat() method
+Used to merge or combine two or more arrays. Example
+var pets = ["Cat", "Dog", "Parrot"];
+var wilds = ["Tiger", "Wolf", "Zebra"];
+// Creating new array by combining pets and wilds arrays 
+var animals = pets.concat(wilds);
+console.log(animals); // Prints: Cat,Dog,Parrot,Tiger,Wolf,Zebra 
+Note:
+The concat() method can take any number of array arguments, so you can create an array from any 
+number of other arrays
+Example
+var pets = ["Cat", "Dog", "Parrot"];
+var wilds = ["Tiger", "Wolf", "Zebra"]; 
+var bugs = ["Ant", "Bee"];
+// Creating new array by combining pets, wilds and bugs arrays 
+var animals = pets.concat(wilds, bugs);
+console.log(animals); // Prints: Cat,Dog,Parrot,Tiger,Wolf,Zebra,Ant,Bee
+
+-------------------------------------------------------------------------------
+Searching Through an Array indexOf() and lastIndexOf() methods
+
+Wants to search a specific value from an array , you can simply use the indexOf() and lastIndexOf().
+If the value is found, both methods return an index representing the array element. 
+If the value is not found, -1 is returned.
+The indexOf() method returns the first one found, whereas the lastIndexOf() returns the last one found.
+Example
+var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"]; 
+console.log(fruits.indexOf("Apple")); // Prints: 0 
+console.log(fruits.indexOf("Banana")); // Prints: 1 
+console.log(fruits.indexOf("Pineapple")); // Prints: -1
+
+Note:
+Both methods also accept an optional integer parameter from index which specifies the index 
+within the array at which to start the search.
+Example
+var arr = [1, 0, 3, 1, false, 5, 1, 4, 7];
+// Searching forwards, starting at from- index 
+
+console.log(arr.indexOf(1, 2)); // Prints: 3 
+// Searching backwards, starting at from index
+console.log(arr.lastIndexOf(1, 2)); // Prints: 0 includes() method
+
+You can also use includes() method to find out whether an array includes a certain element or not.
+Example
+var arr = [1, 0, 3, 1, false, 5, 1, 4, 7]; 
+console.log(arr.includes(1)); // Prints: true 
+console.log(arr.includes(6)); // Prints: false 
+console.log(arr.includes(1, 2)); // Prints: true 
+console.log(arr.includes(3, 4)); // Prints: false
+
+------------------------------------------------------------
+find() method
+If you want to search an array based on certain condition then you can use the JavaScript 
+find() method which is newly introduced in ES6.
+Example
+var arr = [1, 0, 3, 1, false, 5, 1, 4, 7]; 
+var result = arr.find(function(element) { 
+	return element > 4;
+});
+
+console.log(result); // Prints: 5 findIndex() method
+Returns the index of a found element in the array instead of its value. 
+Example
+var arr = [1, 0, 3, 1, false, 5, 1, 4, 7];
+var result = arr.findIndex(function(element) { 
+	return element > 6;
+});
+console.log(result); // Prints: 8 filter() method
+
+The filter() method creates a new array with all the elements that successfully passes the given test
+Example
+var arr = [1, 0, 3, 1, false, 5, 1, 4, 7];
+var result = arr.filter(function(element) { return element > 4;
+});
+console.log(result); // Prints: 5,7 
+console.log(result.length); // Prints: 2 
+Sorting an Array
+sort() method Example
+var fruits = ["Banana", "Orange", "Apple", "Papaya", "Mango"]; 
+var sorted = fruits.sort();
+console.log(sorted); // Outputs: Apple,Banana,Mango,Orange,Papaya Reversing an Array
+
+reverse() method Example
+var counts = ["one", "two", "three", "four", "five"]; var reversed = counts.reverse();
+console.log(reversed); // Output: five,four,three,two,one
+-------------------------------------------------------------
+
+String Methods
+Based on functionality String methods are classified into 
+1) Searching Methods
+2) Trimming Methods 
+3) Padding Methods 
+4) Extracting Methods
+5) Concatenating & interpolating Methods 
+6) Replacing Methods
+7) Changing cases Methods 
+
+Searching Methods
+1) indexOf() – get the index of the first occurrence of a substring in a string.
+2) lastIndexOf() – find the index of the last occurrence of a substring in a string. 
+3) includes() – check if a string contains a substring.
+4) startsWith() – check if a string starts with another string.
+5) endsWith() – determine if a string ends with another string.
+
+"The Importance of the string is have collective characters in the sentence"
+
+Trimming Methods
+1) trim() – remove whitespace characters from a string.
+2) trimStart() – remove the leading whitespace characters of a string. 
+3) trimEnd() – remove the ending whitespace characters of a string.
+
+Padding Methods
+padStart() & padEnd() – pad a string with another string until the result string reaches 
+the given length.
+var str = '1234'.padStart(8,'0'); 
+console.log(str); // "00001234" 
+var str = 'abc'.padStart(5); 
+console.log(str); // " abc"
+var str = 'abc'.padEnd(5); 
+console.log(str); // "abc " 
+str = 'abc'.padEnd(5,'*'); 
+console.log(str); // "abc**" 
+str = 'abc'.padEnd(5,'def'); 
+console.log(str); // "abcde"
+
+Extracting Methods
+1) split() – split a string into an array of substrings. 
+2) substring() – extract a substring from a string. 
+3) slice() – extract a part of a string.
+
+Concatenating & interpolating
+concat() – concatenate multiple strings into a new string.
+
+Replacing Methods
+1) replace() – replace a substring in a string with a new one.
+2) replaceAll() – replace all occurrences of a substring that matches a pattern with a new one.
+
+Changing case methods const message = 'Hello';
+var newMessage = message.toUpperCase(); 
+console.log(newMessage);
+var message = 'Hi';
+var newMessage = message.toLowerCase(); 
+console.log(newMessage);
+-----------------------------------------------------------------
+Session 11 : 
+	Object Methods 
+	An Object is a collection of key/value pairs of properties . 
+	when the value is a function the property becomes a method. 
+	Methods used to describe the object behaviors.
+
+		var obj = {
+			oName : "abc",
+			oAge : 23,
+			greet : function(){
+				console.log("Hello")
+			}
+		}
+
+		obj.greet();
+
+
+
+		var person = {
+			firstName : 'Abhi',
+			lastName : 'Krishna',
+			greet(){
+				console.log("Hello ");
+			},
+			age : 21
+		};
+		person.greet();
+
+
+
+	Inside a method, the 'this' value References the object that 
+	invokes the method.
+
+
+		this 
+
+		var person = {
+			firstName : 'Abhi',
+			lastName : 'Krishna',
+			getFullName(){
+				return this.firstName + " " + this.lastName;
+			}
+		};
+
+
+		console.log(person.getFullName());
+
+var student = {
+    firstName : 'Abhi',
+    lastName : 'Krishna',
+    age : 23,
+    marks : [50,60,70,50,60],
+	getTotalMarks(){
+		
+	}
+};
+
+// Assignment : get student Total Marks, Result , Average 
+
+
+
+
+
+
+
+
+
+
+
+
+var student = {
+    firstName : 'Abhi',
+    lastName : 'Krishna',
+    getFullName(){
+        return this.firstName + ' ' + this.lastName;
+    },
+    age : 21,
+    marks : [30,40,50,60,70]
+};
+
+console.log(person);
+console.log(person.getFullName());
+
+// Assignment : getResult and getTotalMarks 
+
+
+
+Constructor function 
+	var person = {
+		firstName : "abhi",
+		lastName : "Krishna"
+	}
+
+	We need to create similar objects like person object, for that we use a 
+	constructor function to define a custom type and the "new" operator to 
+	create multiple objects from this type.
+
+		function Person(firstName,lastName){
+			this.firstName = firstName;
+			this.lastName = lastName;
+		}
+
+		var person1 = new Person('Krishna','Aravind');
+		var person2 = new Person('Abhi','Anu');
+		console.log(person1);
+		console.log(person2);
+		
+
+Objects can inherit features from one to another using prototypes. 
+Every object has its own property called prototype.
+
+
+// Examples 
+
+// Assignment : students with getTotalMarks, Avg % 
+
+// Assignment : Employee monthly salary according to the working days 
+
+var emp1 = new Employee("Krishna",1200000,20,"Jun")
+
+emp1.getMonthSal()
+
+// Employee : name, salary, designation ,, this.getMonthlySal()
+
+--------------------------------------------------------
+Object.freeze()
+
+Object on which to lock the attributes.
+Prevents the modification of existing property attributes and values, and prevents 
+the addition of new properties.
+
+
+Object.assign()
+
+Copy the values of all of the enumerable own properties from one or more source objects 
+to a target object.
+Returns the target object.
+
+var a = {a :1, b:2};
+var b = {c : 3, d : 4};
+var c = Object.assign({},a,b);
+console.log(c);
+
+	Object.hasOwn() - check if an object has a property 
+
+	This method checks whether the object has the specified property 
+	as its own (not inherited) property.
+
+	const obj = { name: 'John', age: 30 };
+
+	console.log(obj.hasOwn('name')); // true
+	console.log(obj.hasOwn('address')); // false
+
+
+Object Getters and Setters 
+In JavaScript, getters and setters are special methods that allow you to define how 
+to access and mutate properties of an object. They offer more control over how values 
+are retrieved and updated for a particular property.
+
+Getter
+A getter allows you to define a function that will be called whenever the property is 
+accessed. This can be useful when you want to compute or transform the value dynamically.
+
+
+Setter
+A setter allows you to define a function that will be called whenever the property is 
+set. This is useful when you need to validate or modify the value being assigned.
+
+Object Properties types : 
+		[[]]
+	Object is having 2 types of properties 
+		- Data Properties 
+		- Accessor Properties 
+	Data Properties
+		contains a single location for a data value 
+			4 attributes 
+			[[Configurable]] - determines a property can be redefined or removed using 
+			delete operator
+			[[Enumerable]] - indicates if a property can be returned in for..in loop
+			[[Writable]] - specifies the value of property can be changed
+			[[Value]] - actual value 
+
+		To Change any attribute of a property, we can use 
+		Object.defineProperty() method.
+
+		The Object.defineProperty() method accepts 3 arguments : 
+			1. An Object
+			2. A Property name of the object
+			3. A Property Descriptor object that has 4 attributes : 
+				configurable,enumerable,writable and value 
+				
+		The Object.getOwnPropertyDescriptor() method provides the attributes 
+		set to the property of an Object.
+
+			var person = {};
+			person.age = 25;
+
+			console.log(person);
+			delete person.age;
+			// To delete a property from an object we use delete operator 
+
+			console.log(person);
+
+		Example : 
+			//'use strict';
+			// var person = {};
+			// person.age = 25;
+
+			// console.log(person);
+			// delete person.age;
+
+			// console.log(person);
+
+			var person = {};
+
+			Object.defineProperty(person,'age',{
+				configurable : false,
+				writable : false,
+				value : 24
+			});
+
+			console.log(person);
+			//delete person.age;
+			person.age = 30;
+			console.log(person);
+
+		Accessor Properties
+			contains a single location for a data value 
+				4 attributes 
+				[[Configurable]] - determines a property can be redefined or removed using 
+									delete operator
+				[[Enumerable]] - indicates if a property can be returned in for..in loop
+				[[Get]] - returns a Value
+				[[Set]] - Assign a value 
+	---------------------------------------
+let person = {};
+
+// Define firstName property with a getter and setter
+Object.defineProperty(person, 'firstName', {
+  get: function() {
+    return this._firstName;
+  },
+  set: function(value) {
+    this._firstName = value;
+  },
+  enumerable: true, // Make it enumerable
+  configurable: true // Make it configurable
+});
+
+// Define lastName property with a getter and setter
+Object.defineProperty(person, 'lastName', {
+  get: function() {
+    return this._lastName;
+  },
+  set: function(value) {
+    this._lastName = value;
+  },
+  enumerable: true, // Make it enumerable
+  configurable: true // Make it configurable
+});
+
+// Define fullName property with a getter
+Object.defineProperty(person, 'fullName', {
+  get: function() {
+    return this.firstName + ' ' + this.lastName;
+  },
+  enumerable: true, // Make it enumerable
+  configurable: true // Make it configurable
+});
+
+// Setting values using the accessor properties
+person.firstName = 'Abhinav';
+person.lastName = 'Kumar';
+
+// Accessing fullName property
+console.log(person.fullName); 
+
+_firstName is a property of that object instance.
+By prefixing it with an underscore (_), it's a convention in JavaScript to indicate that 
+it's meant to be private/internal.
+Using this._firstName doesn't provide true encapsulation or privacy, as any code with 
+access to the object can still access or modify _firstName.
+	---------------------------------------
+		Example : 
+		//'use strict';
+		// var person = {};
+		// person.age = 25;
+
+		// console.log(person);
+		// delete person.age;
+
+		// console.log(person);
+
+		var person = {
+			firstName : 'Abhi',
+			lastName : 'Krishna'
+		};
+
+		Object.defineProperty(person,'age',{
+			configurable : false,
+			writable : false,
+			value : 24
+		});
+
+		Object.defineProperty(person,'fullName',{
+			get : function(){
+				return this.firstName + ' ' + this.lastName;
+			}
+		});
+
+		Object.defineProperties(person,{
+			address : {
+				value : "Hyderabad"
+			},
+			salary : {
+				value : 10000
+			}
+		})
+
+		console.log(person);
+		//delete person.age;
+		person.age = 30;
+		console.log(person);
+
+		console.log(Object.getOwnPropertyDescriptor(person,'firstName'));
+		
+Session 12 : 
+Function Context  explains the various types of invocation of functions : 
+		- Function invocation
+		- Method invocation
+		- Constructor invocation
+		- indirect invocation (call(), apply())
+
+	Advanced Function Types / methods 
+	In JavaScript all functions are objects. They are the instances of the Function type.
+	Because functions are objects, they have properties and methods like other object. 
+
+	instanceof 
+	- property / operator  
+	
+	Each function has 2 important properties
+		 	length 
+			prototype 
+	length property determines the number of named arguments specified in the 
+	function declaration.
+
+	prototype property References the actual function object. 
+
+
+	A function object has 3 important methods : 
+			apply()
+			call()
+			bind()
+
+apply method Calls the function, substituting the specified object for the 
+this value of the function, and the specified array for the arguments of the function.
+
+var car = {type : 'Car', wheels : 4};
+var bus = {type : 'Bus', wheels : 6};
+
+var say = function(message1,message2){
+    console.log(message1);
+    console.log("Type is : " + this.type);
+    console.log(message2);
+    console.log('it has ' + this.wheels + ' Wheels');
+}
+
+// say.apply(car,['What is the Type of Vehicle ?','How many wheels ?']);
+// say.apply(bus,['What is the Type of Vehicle ?','How many Wheels ?']);
+
+say.call(car,'What is the Type of Vehicle ?','How many wheels ?');
+say.call(bus,'What is the Type of Vehicle ?','How many Wheels ?');
+
+
+Example for apply:
+var car = {type : 'Car', wheels : 4};
+var bus = {type : 'Bus', wheels : 6};
+
+var say = function(message){
+    console.log(message);
+    console.log(this.type + ' has ' + this.wheels + 'Wheels');
+}
++
+say.apply(car,['How many wheels ?']);
+say.apply(bus,['How many Wheels ?']);
+
+Example for call:
+
+var car = {type : 'Car', wheels : 4};
+var bus = {type : 'Bus', wheels : 6};
+
+var say = function(message){
+    console.log(message);
+    console.log(this.type + ' has ' + this.wheels + 'Wheels');
+}
+
+say.call(car,'How many wheelsss ?');
+say.call(bus,'How many Wheelsss ?');
+
+The apply() and call() methods call a function with a given this value and arguments.
+
+The difference between apply() and call() is that we need to pass the arguments to 
+the apply() method as an array-like object, where as we pass the arguments to the 
+call() method individually. 
+
+Why Use call() and apply()?
+Control the this context: These methods let you invoke a function and specify what 
+this should refer to inside that function.
+Function reuse: You can reuse functions across different objects.
+Argument flexibility: call() lets you pass arguments one by one, while apply() is 
+useful when you have arguments in an array or array-like object (e.g., from the 
+arguments object).
+
+bind() method creates a new function instance whose this value is bound to the 
+object that we provide. 
+
+The bind() method in JavaScript is used to create a new function that, when called, 
+has its this value set to the value you provide, with optional arguments pre-filled. 
+Unlike call() and apply(), which invoke the function immediately, bind() returns 
+a new function that you can call later.
+
+When to Use bind():
+Set this for later use: When you want to define a method or callback that should 
+always use a specific this context, regardless of how or when it is called.
+Pre-fill arguments: For partial application, where you pre-fill some arguments 
+and leave others to be supplied later.
+Event handlers: To make sure that this refers to the correct object inside event 
+listener functions.
+
+Example for bind:
+
+``var car = {
+    speed : 50,
+    start : function(){
+        console.log('Start with' + this.speed + ' km/h');
+    }
+}
+
+var aircraft = {
+    speed : 200,
+    fly : function(){
+        console.log('Flying');
+    }
+}
+
+
+var comp = car.start.bind(aircraft);
+
+comp();``
+
+----------------------------------------------------
+
+closures - is a function that References Variables in the outer scope from 
+its inner scope.
+
+function greeting(){
+    var msg ='Hi';
+
+    function sayHi(){
+        console.log(msg);
+    }
+
+    return sayHi;
+}
+
+var hi = greeting();
+hi();
+
+Lexical scoping describes how the Javascript engine uses the location of the 
+Variable in the code to determine where that Variable is available. 
+
+
+
+
+Assignment : student : firstName, lastName 
+apply - array [40,50,60]
+
+call - multiple arguments 
+
+bind - 
+person 
+	getFullName 
+
+student 
+	getTotalMarks
+
+
+
+-------------------------------------------
+Document Object Model :
+	The Document Object Model (DOM) is an Application Programming Interface(API)
+	for manipulating HTML documents.
+
+	The DOM represents an HTML document as a tree of nodes.
+
+	The DOM Provides functions that allow to add, remove, modify of the document 
+	effectively.
+
+	In The DOM tree 
+		Document ---> root node 
+						one child node ---> HTML (document element)
+
+		node 
+			has 2 properties 
+				nodeName 
+				nodeValue 
+
+		Constant 					Value 			Description 
+	Node.ELEMENT_NODE					1			An Element node like <p> or <div>
+	Node.TEXT_NODE						3			The Actual Text Inside an Element or Attr
+	Node.CDATA_SECTION_NODE 			4			A CDATA section
+	Node.PROCESSING_INSTRUCTION_NODE	7			A Processing Instruction 
+	Node.COMMENT_NODE					8			A Comment Node
+	Node.DOCUMENT_NODE					9			A Document Node 
+	Node.DOCUMENT_TYPE_NODE				10			DOCTYPE 
+	Node.DOCUMENT_FRAGMENT_NODE			11			A Document Fragment 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Getting Elements from DOM :
+	
+	getting the Elements 
+		document.getElementsByTagName
+		method accepts a tag name and returns a live HTMLCollection of Elements
+		with the matching tag name in the order which they appear in the document.
+
+		document.getElementsByClassName
+		method returns an array-like of objects of the child elements with a specified
+		classname. 
+
+		document.getElementsByName 
+		method accepts a name which is the value of the name attribute of the 
+		elements and returns a live NodeList of elements.
+
+	.getting the Element
+		document.getElementById
+		method returns an element object that represents an HTML element with an id
+		that matches a specific string.
+		if the document has no element with the specific id, 
+		the document.getElementById()
+		returns null
+
+	defer attribute is a boolean attribute - is used to set the script to be 
+	executed after the page finished parsing.
+	The Defer attribute is only for External scripts.
+
+
+	document.querySelector
+	is a method of the Element interface. this method allows to select the first 
+	element that matches one or more CSS selectors.
+
+		document.querySelector('p') - first element of the p 
+		document.querySelector('#demo') - Id selectors
+		document.querySelector('.demo1') - Class Selectors 
+
+
+
+	document.querySelectorAll
+	method returns a static NodeList of elements that match the CSS Selectors.
+	if no element matches, it returns an empty NodeList. 
+
+Example : 
+	document.querySelector('demo1')
+	null
+	document.querySelector('.demo1')
+	<div class=​"demo1">​…​</div>​
+	document.querySelectorAll('p')
+	NodeList(4) [p, p, p, p]
+	document.querySelectorAll('div')
+	NodeList(2) [div#demo, div.demo1]0: div#demo1: div.demo1length: 2[[Prototype]]: NodeList
+	document.querySelectorAll('#demo')
+	NodeList [div#demo]
+	document.querySelectorAll('.demo1')
+	NodeList [div.demo1]
+	document.querySelectorAll('*')
+	NodeList(20) [html, head, meta, meta, title, link, script, body, div#demo, p, p, p, p, div.demo1, input, input, input, input, script, grammarly-desktop-integration]0: html1: head2: meta3: meta4: title5: link6: script7: body8: div#demo9: p10: p11: p12: p13: div.demo114: input15: input16: input17: input18: script19: grammarly-desktop-integrationlength: 20[[Prototype]]: NodeList
+	document.querySelectorAll('div p')
+
+
+Session 13: 
+	
+		document.createElement is used to create new HTML elements.
+		it accepts an HTML tag name and returns a new Node with the Element type.
+
+		To Attach the created Element to the Document Body, we use appendChild()  method 
+
+-----------------------
+	var div = document.createElement('div');
+	div.id  = 'content';
+	//div.innerHTML = '<p>Content in Paragraph</p>';
+	var p = document.createElement('p');
+	p.innerText = "Some Other Content";
+	div.appendChild(p);
+	document.body.appendChild(div);
+
+------------------------------------
+	createElement()
+	appendChild()
+		Before()
+		After()
+		replaceChild()
+		removeChild()
+		cloneNode()
+		append()
+		prepend()
+
+	parentNode
+	siblings 
+	childrens 
+
+Working with attributes :
+	setAttribute()
+	getAttribute()
+	removeAttribute()
+	hasAttribute()
+
+Working with Styles ;
+	Style property 
+		document.querySelector('ul').style.color = "red"
+	getComputedStyle()
+	className
+	classList
+	Element's width & height 
+
+Name, age , DOB,  city, Select Courses , checkbox accept 
+submit 
+obj {
+	name :,
+	age : ,
+	dob : ,
+	city :,
+	course :, 
+	terms : ,
+}
+
+students = [
+	{
+		
+	},
+
+	{
+
+	}
+]
+
+----------------------------------
+s.no | Name | course | age | city |
+------------------------------------
+1		Krishna
+
+
+
+
+
+
+
+
+
+
+
+String Interpolation : `${}`
+Inside the backticks we use $ with {} (Container) in which we can bind the values.
+
+
+Working with Events : 
+An Event is an action that occurs in the web browser, which the web browser feedbacks to
+the user so that user can respond to it. 
+
+Event FLow : 
+	Event Flow Explains the order in which events are recieved on the page from 
+	the element where the event occurs and propogated through the DOM tree.
+	This Process is called : Event Propagation.
+	There are 2 main event models : 
+		Event Bubbling 
+		Event Capturing 
+	
+	Event Bubbling : In the event Bubbling model, an event starts at the most 
+	specific element and then flows upward towards the least specific element.
+	(document or window).
+
+	Document 5
+		html 4
+			body 3
+				div 2
+					button 1
+				
+	Event Capturing : In the Event Capturing model, an event starts at the least 
+	specific element and flows downward towards the most specific element.
+	Document 1
+		html 2
+			body 3
+				div 4
+					button 5
+
+	DOM Level2 Event flow 
+		DOM level 2 event specify that event flow has 3 phases :  
+		3 phases 
+			1. Event Capturing 
+				First, event Capturing occurs, which provides the oppurtunity
+				to intercept the event.
+			2. Event Target 
+				the actual target recieves the event 
+			3. Event Bubbling 
+				Finally, event bubbling occurs, which allows a final response
+				to the event.
+	
+	Event Object : 
+		when the event occurs, the web browser passes an Event object to the 
+		event handler.
+
+	
+	Properties/ Methods: 			Description:
+		bubbles				true if the event bubbles 	
+
+		cancelable			true if the default behaviour of the 
+							event can be cancelled. 
+
+		currentTarget		the current element on which the event is firing 
+
+		defaultPrevented 	return true if the preventDefault() has been called.
+
+		preventDefault()	cancel the default behaviour for the 
+							event .This method is only effectively
+							if cancelable property is true
+
+		detail 				more information about the event 
+
+		eventPhase			1 - Capturing
+							2 - target 
+							3 - Bubbling
+
+		stopPropagation()	cancel any further event Capturing or
+							bubbling. This method only can be used 
+							if the bubbles property is true.
+
+		target				the target element of the event
+		
+		type 				type of event that was fired.
+	
+
+Handling Events : 
+	When an event occurs, we can create an event handler which is a piece of code 
+	that will execute to respond to that event. 
+	
+	An event handler is also known as an event listener. it listens to the event 
+	and responds accordingly.
+
+	An event listener is a function with an explicit name if it is reusable or an 
+	Anonymous function in case it is used one time.
+
+	An event can be handled at one or multiple event handlers. if an event has 
+	multiple event handlers, all the event handlers will be executed when the 
+	event is fired. 
+	
+
+	Three ways to assign Event Handlers : 
+		1. HTML Event Handler Attributes 
+		2. DOM Level 0 Event Handlers
+		3. DOM Level 2 Event Handlers
+			
+
+		1. HTML Event Handler Attributes 
+			 Event handlers typically have names that begin with 'on' 
+			 for example : onclick 
+			 To Assign an event handler to an event associated with an HTML 
+			 element, we can use an HTML attribute with the name of the 
+			 event handler. 
+			 <button onclick="dosomething()">Click me </button>
+
+			 function dosomething() {
+					console.log('Hello I am clicked');
+				}
+		Disadvantages : 
+			1. event handlers code is mixed with the html code, which will 
+			make the code more difficult to maintain and extend.
+			2. Timing Issue.if the element is loaded fully before the JavaScript
+			code, users can start interacting with the element on the webpage 
+			which will cause an error. 
+		
+		2. DOM Level 0 Event Handlers
+
+		<button id="btn">Click me</button>
+
+		var btn = document.getElementById('btn');
+
+		btn.onclick = function (){
+			console.log('Do Something');
+		}
+
+		The DOM Level assigns an event handler to the element event handler
+		properties in the script.
+
+		3. DOM Level 2 event Handlers : 
+
+		DOM Level 2 event handlers provides 2 main methods 
+		for dealing with the registering / deregistering event listeners.
+			addEventListener() - register an Event Handler
+			removeEventListener() - remove an Event Handler 
+		
+		These methods are available in all DOM Nodes.
+
+		addEventListener() method accepts 3 arguments : 
+		event name 
+		event handler function 
+		a boolean value - true - event Capturing  false - event bubbling.
+
+		removeEventListener() removes an event listener that was added by 
+		addEventListener. 
+
+
+
+
+
+
+	Example : 
+
+	<!-- <button onclick="demo()">Click Demo</button> -->
+	<button id="btn">click</button>
+
+	function demo(){
+    console.log('Clicked me');
+	}
+
+	var btn = document.querySelector('#btn');
+
+	// btn.onclick = function(){
+	//     console.log('DOM level 0 event');
+	// }
+
+	Example : 
+	var show = function show(){
+    console.log('clicked me ');
+    btn.removeEventListener('click',show);
+
+	}
+	btn.addEventListener('click',show)
+---------------------------------------------
+	Page Load Events : 
+		DOMContentLoaded
+		load
+		beforeunload
+		unload
+
+	Mouse Events : 
+		click
+		dblclick 
+		mousedown
+		mouseup
+		mouseover
+		mouseout
+		mouseenter
+		mouseleave
+
+	Keyboard events
+		keyup
+		keydown
+		keypress
+
+	scroll 
+		onscroll  
+------------------------------------------------
+ <form id = "userForm">
+        <input type="text" name="name" placeholder="enter name" required /><br><br>
+        <input type="number" name="age" placeholder="enter name" required/><br><br>
+        <input type="submit" value="submit">
+    </form>
+    <script>
+        var form = document.forms;
+        var obj = {};
+        var fr = document.getElementById('userForm');
+        fr.addEventListener("submit",function(e){
+            e.preventDefault();
+            obj.userName = document.forms[0]['name'].value;
+            obj.age = document.forms[0]['age'].value
+            console.log(obj);
+        })
+    </script>
+
+	 <form id="student">
+        <input type="text" name="studentName" placeholder="Enter Student Name" required><br><br>
+        <input type="text" name="course" placeholder="Enter Course Name" required><br><br>
+        <input type="date" name="dob" placeholder="Enter Date of Birth" required><br><br>
+        <input type="email" name="email" placeholder="Enter Email" required><br><br>
+        <input type="number" name="marks" placeholder="Enter Marks" required><br><br>
+        <input type="number" name="marks" placeholder="Enter Marks" required><br><br>
+        <input type="number" name="marks" placeholder="Enter Marks" required><br><br>
+        <input type="number" name="marks" placeholder="Enter Marks" required><br><br>
+        <input type="number" name="marks" placeholder="Enter Marks" required><br><br>
+        <input type="submit" value="submit">
+   </form>
+-----------------------------------------------
+var inp1 = document.getElementsByName("user")[0];
+var inp2 = document.getElementsByName("user")[1];
+var obj = {};
+function validate(e){
+    if(e.target.value.length < 3 || e.target.value.length > 10){
+        inp1.setAttribute("class","red");
+    }else{
+        if(inp1.hasAttribute("class")){
+            inp1.removeAttribute("class");
+        }
+    }
+    obj.userName = e.target.value;
+}
+function validateAge(e){
+    var age = +e.target.value;
+    if(age < 10 || age > 30){
+        inp2.setAttribute("class","red");
+    }else{
+        if(inp2.hasAttribute("class")){
+            inp2.removeAttribute("class");
+        }
+    }
+    obj.age = age;
+}
+var user = document.getElementById('user');
+user.addEventListener("submit",function(e){
+    e.preventDefault();
+    console.log(obj);
+});
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .red{
+            border: 1px red solid;
+            color : red;
+        }
+    </style>
+</head>
+<body class="container">
+    <h1>Sample</h1>
+    <br>
+    <form id="user">
+    <input type="text" name="user" placeholder="Enter user Name" 
+    onkeypress="validate(event)"><br><br>
+    <input type="number" name="user" placeholder="Enter user Age" 
+    onkeypress="validateAge(event)" ><br><br>
+    <input type="submit" value="submit">
+    </form>
+
+</body>
+</html>
+---------------------------------------------
+<input type="checkbox" name="course">
+    <label>HTML</label>
+
+var check = document.getElementsByName("course")[0];
+check.addEventListener('change',function(e){
+    console.log(e.target.checked);
+});
+
+// try with radio 
+// try with select and options 
+-------------------------------------------------
+var today = new Date();
+console.log(today);
+-------------------------------------------------
+BOM - Browser Object Model 
+	window 
+		Location 
+		Navigator 
+		Screen 
+		History 
+
+
+Session 14 : 
+	BOM 
+	Browser Object Model is the core of the JavaScript on the web.
+	The BOM provides us with objects that expose the web browser's 
+	Functionality.
+
+	JavaScript window object which is the global object of JavaScript in 
+	the browser.
+
+	Window properties 
+
+	The window object has 4 properties related to the size of the window : 
+		innerHeight
+		innerWidth 
+		outerHeight
+		outerWidth 
+
+	console.log(innerHeight,innerWidth,outerHeight,outerWidth);
+
+	To Open  a new Window or Tab, we use window.open()  method
+
+	window.open(url,windowName,[windowFeatures]);
+
+	To resize a window we use resizeTo() method of the window object 
+
+	window.resizeTo(width,height);
+
+	To move a window to a specified coordinate, we use moveTo() method
+	
+	window.moveTo(x,y)
+
+	To close a window, we use the window.close() method
+
+	pop-up / dialog 
+
+	Browser can invoke a system dialog to display information to the user
+		alert()
+			windows alert method / dialog popup
+				alert();
+			method is used to display information that users has to acknowledge.
+		confirm()
+			to invoke a dialog with a question with 2 buttons ok & cancel, we use
+			confirm() method 
+				function simple(){
+					var result = confirm('Are you surely want to delete?');
+
+					var message = result ? 'Clicked on OK' : 'Clicked on CANCEL';
+
+					alert(message);
+				}
+			The Confirm() returns true if the OK button was clicked or false
+			if the CANCEL button was clicked.
+		prompt()
+			dialog with input text with 2 buttons ok and cancel 
+				function simple(){
+					var ageStr = prompt("How old are you ?");
+					var age = Number(ageStr);
+
+					var feeback = age >= 16 ? 'Elgible to Join' : 'Must be atleast 16 years';
+
+					alert(feeback);
+					}
+
+	setTimeout() is a method of window Object. 
+			sets a timer and executes a callback function after the timer expires.
+
+				setTimeout(cb,[,delay],arg1,arg2,arg3.....);
+
+				cb - callback function to be executed after the timer expires
+				delay -  is the time in milliseconds that the timer should 
+				wait before executing the callback function.
+				if we omit it, the delay defaults to 0.
+
+				arg1,arg2... are arguments passed to the callback function
+				
+     setTimeout(function(){
+         console.log("Hello");
+		 
+     }, 5000);
+
+    //------------------------
+     setTimeout(something, 5000);
+
+     function something(){
+         console.log("Hello");
+     }
+    // ----------------------------
+    setTimeout(something, 5000, "Krishna");
+
+    function something(a){
+        console.log("Hello",a);
+    }
+------------------------------------------------
+
+				var timeoutID;
+
+				function simple(a){
+				console.log("Timeout Text :",a);
+				}
+
+				timeoutID = setTimeout(simple,3000, 'SetTime Out Here'); 
+
+				function clearAlert(){
+					clearTimeout(timeoutID);
+				}
+
+
+		setInterval()
+		is the method of the window and it repeatedly calls a function with a 
+		fixed delay between each call.
+		setInterval(callback,delay,[arg1,arg2,...]);
+
+				var IntervalID;
+
+				function simple(a){
+				console.log("Interval Text :",a);
+				}
+
+				Interval = setInterval(simple,3000, 'SetTime Out Here'); 
+
+				function clearAlert(){
+					clearInterval(IntervalID);
+				}
+			Example : 
+			var IntervalID;
+
+			function simple(){
+			var date = new Date();
+			console.log("Interval Text :",date);
+			}
+
+			IntervalID = setInterval(simple,1000); 
+
+			function clearAlert(){
+				clearInterval(IntervalID);
+			}
+
+
+		setImmediate is a function that executes a specified function immediately after the 
+		current event loop cycle completes, similar to setTimeout with a delay of 0. 
+		However, setImmediate is not part of the standard JavaScript language but 
+		rather a feature of the Node.js environment.
+
+
+		setImmediate(callback, [arg1, arg2, ...])
+		
+		callback: The function you want to execute after the current event loop.
+				[arg1, arg2, ...]: Optional arguments to pass to the callback function.
+		Example:
+		
+		setImmediate(function(){
+			console.log("This runs immediately after the current event loop.");
+		});
+		console.log("This runs before the setImmediate callback.");
+
+
+Location Object represents the current location (URL) of a document
+	href 
+	protocol 
+	host 
+	port 
+	hostname 
+	origin
+	pathname 
+	search 
+	hash 
+	username 
+	password 
+
+	methods : 
+	assign()
+	reload()
+	replace()
+
+The JavaScript Navigator provides information about the web browser and 
+its capabilities.
+
+Screen object provides the attributes of the screen on which the 
+current window is being rendered. 
+
+History is an object of window - stack stores the current page and 
+previous page that  we visited.
+
+	History object provides 3 Methods
+		back()
+		forward()
+		go()
+
+
+
+
+
+
+
+
+	Form Validations 
+		Form -action and Method (POST, GET )
+		HTMLFormElement
+			2 methods : submit(), reset()
+
+
+Session 15: 
+		form validations in Javascript 
+		<form action="signup.html" method="post" id="signup">
+			<h1>Sign Up</h1>
+			<div class="field row">
+				<div class="col">
+				<label for="name">Name:</label>
+				</div>
+				<div class="col">
+				<input type="text" id="name" name="name" placeholder="Enter your fullname" />
+				<small></small>
+				</div>
+			</div>
+			<div class="field row">
+				<div class="col">
+				<label for="email">Email:</label>
+				</div>
+				<div class="col">
+				<input type="text" id="email" name="email" placeholder="Enter your email address" />
+				<small></small>
+				</div>
+			</div>
+			<div class="field row">
+				<div class="col"></div>
+				<div class="col">
+				<button type="submit" class="full">Subscribe</button>
+				</div>
+				<div class="col"></div>
+			</div>
+		</form>
+
+	// show a message with a type of the input
+function showMessage(input, message, type) {
+	// get the small element and set the message
+	const msg = input.parentNode.querySelector("small");
+	msg.innerText = message;
+	// update the class for the input
+	input.className = type ? "success" : "error";
+	return type;
+}
+
+function showError(input, message) {
+	return showMessage(input, message, false);
+}
+
+function showSuccess(input) {
+	return showMessage(input, "", true);
+}
+
+function hasValue(input, message) {
+	if (input.value.trim() === "") {
+		return showError(input, message);
+	}
+	return showSuccess(input);
+}
+
+function validateEmail(input, requiredMsg, invalidMsg) {
+	// check if the value is not empty
+	if (!hasValue(input, requiredMsg)) {
+		return false;
+	}
+	// validate email format
+	const emailRegex =
+		/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+	const email = input.value.trim();
+	if (!emailRegex.test(email)) {
+		return showError(input, invalidMsg);
+	}
+	return true;
+}
+
+const form = document.querySelector("#signup");
+
+const NAME_REQUIRED = "Please enter your name";
+const EMAIL_REQUIRED = "Please enter your email";
+const EMAIL_INVALID = "Please enter a correct email address format";
+
+form.addEventListener("submit", function (event) {
+	// stop form submission
+	event.preventDefault();
+
+	// validate the form
+	let nameValid = hasValue(form.elements["name"], NAME_REQUIRED);
+	let emailValid = validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
+	// if valid, submit the form.
+	if (nameValid && emailValid) {
+		alert("Demo only. No form was posted.");
+	}
+});
+
+---------------------------------
+
+S.No 	Name			Action 
+1		Krishna 		View - Button 
+2		Abhi 			View - button
+
+
+Name 		Krishna
+Age 		23
+Course 		HTML
+
+
+--------------------------------
+
+
+
+ES6
+
+ECMASCRIPT 2015 or ES2015 or ES6 is a significant update to the JavaScript programming
+language. it is the first major update to the language since ES5 which
+was standardised in 2009.
+
+New ES6 Syntax: 
+
+let const vs var 
+
+let 
+
+In ES5, when we declare a Variable using var keyword, the scope of the Variable
+is either global or local. if we declare a Variable outside of a function, the 
+scope of the Variable is global. when we declare a Variable inside a function, the 
+scope of the Variable is local.
+
+ES6 provides a new way of declaring a Variable by using let keyword.
+The let keyword is similar to the var keyword, except that these Variables are 
+blocked-scope.
+
+const 
+
+ES6 provides a new way of declaring a constant by using const keyword. The const 
+keyword creates a read-only Reference to a value.
+
+const CONSTANT_VALUE = value; 
+By convention, the constant identifiers are in uppercase.
+
+
+
+Spread Operator 
+
+ES6 provides a new operator called spread operator that consists of three dots
+(...). The Spread operator allows us to spread out elements of an iterable 
+object such as an Array,map or set. 
+
+Spread Operator
+(...) - spread out the values of an iterable object - array,map,set 
+let odd = [1,3,5];
+let combined = [2,4,6,...odd];
+
+console.log(combined);// [2,4,6,1,3,5]
+
+
+let names = ['Abhi','Arjun','Akhil'];
+let moreNames = ['Balu','Babitha'];
+
+//[].push.apply(names,moreNames);
+names.push(...moreNames);
+
+console.log(names);
+
+Rest Parameter 
+(...)
+
+ES6 provides a new kind of parameter called Rest-parameter that has a prefix of 
+three dots(...). A Rest parameter allows us to represent an indefinite number 
+of arguments as an array. 
+
+function sum(...args){
+    let total = 0;
+    console.log(args); [1,2,3,5,6,7,7,8]
+    for(let a = 0; a < args.length; a ++){
+        total += args[a];
+    }
+
+    return total;
+}
+
+console.log(sum(1,2,3,5,6,7,7,8));
+
+///
+var str = '/a5318y2ffdkdfnv;lsv f.kfvbjkjcnc m .keuffheiuhfiejrfoeorfkw   0et#^&(_)OI)UY& nf sm, cd';
+console.log(str.length);
+
+------------------------------
+
+for loops 
+
+ES6 Introduced a new statement for...of that iterates over an iterable object such 
+as Array,String,Map,Set.
+
+for..of
+for..in
+
+The for...in loop iterates over all enumerable properties of an object. it doesn't 
+iterate over a collection such as Array,Map,Set.
+
+
+let arr = [1,2,3,4,5];
+
+let obj = {a : 1, b : 2, c : 3};
+
+for(let a of arr){
+    console.log(a);
+}
+
+for(let o in obj){
+    console.log(o + "--> " + obj[o]);
+}
+-------------------------------------------------------------
+Assignment :
+users = [
+	{
+		name : 'abc',
+		course : 'html',
+		address : {
+			street : "XYZ",
+			city : "Hyderabad",
+			pincode : "503030"
+		},
+		marks : 350,
+
+	},
+	{
+		name : 'abc',
+		course : 'html',
+		address : {
+			street : "XYZ",
+			city : "Hyderabad",
+			pincode : "503030"
+		},
+		marks : 350,
+	},
+	{
+		name : 'abc',
+		course : 'html',
+		address : {
+			street : "XYZ",
+			city : "Hyderabad",
+			pincode : "503030"
+		},
+		marks : 350,
+		
+	}
+]
+
+s.no   Name   Course  Address    marks 	 
+1 		abc   html    Street: 	 		 
+					  City 
+					  Pincode 
+2
+
+
+
+name    abc 
+course  html 
+address Hyderabad
+pincode 373883
+marks 	350
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------
+
+Session 16:
+	ES6 
+		Template Literals 
+		in ES6, we can create template literal by wrapping up the text or expressions in 
+		backticks (``);
+
+		 ``
+		 	let a = 10;
+
+			let msg = 'The value of a :' + a;
+
+			let msg1 = `The Value of a : ${a}`;
+
+			console.log(msg,msg1);
+
+		${}  - string Interpolation
+
+		Object Literal Syntax : 
+		 Object literal is one of the most popular patterns for creating objects in 
+		 JavaScript beacuase of its simplicity.
+		 ES6 makes the object literal more succinct and powerful by extending 
+		 the syntax in some ways. 
+
+		 function createProperty(name,status){
+			return{
+				name,
+				status
+			}
+		 }
+		console.log(createProperty("Kalyan","Single"));
+        console.log(createProperty("Abhi","Single"));
+
+	Computed Property Name : 
+		 let name1 = 'Employee';
+			let person = {
+				[name1] : 'Krishna',
+				'address' : 'Hyderabad'
+			};
+
+			console.log(person);
+
+		We use [] square brackets to enable the computed property names of the 
+		properties on objects.
+
+		 let prefix = 'machine';
+		let machine = {
+			[prefix + ' name'] : 'server',
+			[`${prefix} hours`] : 1000
+		}
+
+		console.log(machine);
+
+	Destructuring
+		is a new feature introduced in ES6, Destructuring assignment allows to 
+		Destructure properties of an object or elements of an array into individual 
+		variables.
+			Array Destructuring 
+			 let arr = [2,3,4];
+			//let a = arr[0], b = arr[1], c = arr[2];
+				let [a,b] = arr;
+				console.log(a,b);
+
+				let arr1 = [5,6,7,8,9,4,5,6,];
+				let [x,y,...z] = arr1;
+				console.log(x,y,z);
+
+			Object Destructuting
+
+			let obj = { a : 1, b : 2, c : 3};
+
+			//let a = obj.a, b = obj.b;
+
+			let {a,b,c} = obj;
+
+			console.log(a,b,c);
+			-------------------------
+			let obj = { a : 1, b : 2, c : 3};
+
+			let {a : x, b : y, c : z} = obj;
+
+			console.log(x,y,z);
+
+		
+	Arrow functions
+
+		ES6 arrow functions provide with an alternative way to write a shorter syntax 
+		compared to the ES5 function expression.
+
+
+					-> lambda 
+			let add = (x,y) =>  x + y;
+
+			console.log(add(5,2)); // 7
+
+
+			let greet = (msg) => console.log(msg);
+
+			greet("Hello"); // Hello
+
+
+			let simple = () => {
+				let a = 10;
+				console.log("The Value of a: " + a);
+			}
+
+			simple(); // The Value of a : 10
+
+			let val = () => 20;
+
+			console.log(val()); //20
+
+
+			let something = () => {
+				let b = 30, c = 40;
+
+				return b + c;
+
+			}
+
+			console.log(something()); // 70
+
+			--------------------------
+
+			// let setColor = function(color){
+			//     return {value : color};
+			// }
+
+			let setColor = color => ({value : color});
+			// Object literal should be returned by wrapping up inside parenthesis
+			let backgroundColor = setColor('red');
+			console.log(backgroundColor);
+
+---------------------------------------
+		Arrow functions vs regular function: 
+			There are 2 main differences between an arrow function and a regular function : 
+			1. In the arrow functions, this,arguments,super,new.target are lexical. it means 
+			that the arrow function uses these variables (or constructs) from the enclosing 
+			lexical scope.
+
+			2.An Arrow function cannot be used as a function constructor. if we use new keyword 
+			to create a new object from an arrow function, we will get an error.
+			
+			arrow functions will not allow this 
+
+				const counter = {
+					count : 0,
+					next : function() {return ++this.count} ,
+					current : function() { return this.count}
+				}
+
+				console.log(counter.next());
+			
+-------------------------------------------------------------
+let arr = [35,45,40,50,55,65,60];
+
+// numbers divisible by 10 - array then val1, val2 
+// val1 40, val2 50 val3 60 
+
+let obj = {sname : "Std1", sage: '23', smarks : [34,45,65]};
+
+// obj destructruing - StudentName,StudentAge,StudentMarks,StudentResult 
+
+---------------------------------------------------------------------
+
+
+	classes 
+			Blueprint for creating Objects.
+			A class encapsulates data and functions that manipulate data 
+
+			constructor() method is default method of class, where we can 
+			initialise the properties of an instance.
+
+			JavaScript automatically calls the constructor() method when we
+			instantiate an object of the class.
+
+		class Name identifier will be in CamelCase
+
+			class Person{
+				constructor(name){
+					this.name = name;
+				}
+
+				// getName(){
+				//     return this.name;
+				// }
+			}
+
+			let person = new Person("Krishna");
+
+			console.log(person.name);
+
+			let person1 = new Person("Abhi");
+
+			console.log(person1);
+		-------------------------------------------
+	Getters and Setters : 
+
+	ES6 provides specific syntax for defining the getter and setter using the
+	get and set keywords.
+
+
+		class Person{
+			constructor(name){
+				this.name = name;
+			}
+
+			getName(){
+				return this.name;
+			}
+
+			setName(newName){
+				newName = newName.trim();
+				if(newName === ''){
+					console.error("Should not be blank")
+				}
+				this.name = newName;
+
+			}
+		}
+
+		let person = new Person("Krishna");
+
+		console.log(person);
+
+		person.setName("Abhinav");
+
+		console.log(person);
+
+		------------------------------------------
+
+		class Person{
+			constructor(name){
+				this.name = name;
+			}
+
+			get name(){
+				return this._name;
+			}
+
+			set name(newName){
+				newName = newName.trim();
+				if(newName === ''){
+					console.error("Should not be blank")
+				}
+				this._name = newName;
+
+			}
+		}
+
+		let person = new Person("Krishna");
+
+		console.log(person);
+
+		person.name = "Akhil";
+
+		console.log(person.name);
+	----------------------------------------------
+	class expressions : 
+	A class expression provides an alternative way to define a new class
+
+	let Person = class{
+    constructor(name){
+			this.name = name;
+		}
+	}
+
+	let std = new Person("Krishna");
+	console.log(std);
+
+	Singleton Design Pattern : 
+	
+	Singleton Design pattern that limits the instantiation of a class
+	to a single instance. 
+	let app = new class{
+		constructor(name){
+			this.name = name;
+		}
+		start(){
+			console.log(`Starting the ${this.name}`);
+		}
+	}('Dosomething Application');
+
+	app.start();
+
+	it ensures that only one instance of a class can be created 
+	throughout the system.
+
+	Class expressions can be used to create a Singleton by calling 
+	the class constructor Immediately.
+
+	To do that, we use new operator with a class expression and 
+	include the parenthesis at the end of class declaration.
+
+
+
+
+
+
+
+
+Computed Property in class : 
+	let name1 = 'fullName';
+
+class Person{
+    constructor(firstName,lastName){
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    get [name1](){
+        return `${this.firstName} . ${this.lastName}`;
+    }
+}
+
+let person = new Person('Krishna','Rama');
+
+console.log(person.fullName);
+
+
+ES6 allows to use an expression in brackets [].
+
+Like an Object literal, we can use computed properties for 
+getters and setters of a class.
+
+
+
+Static Methods :
+
+By Definition, static methods are bound to a class, not the instances
+of that class. Therefore, static methods are useful for defining 
+helper or utility methods.
+
+use the className.staticMethodName() or
+this.constructor.staticMethodName() to call a static method
+in a class constructor or an instance method.
+ 
+		class Person{
+			constructor(name){
+				this.name = name;
+			}
+
+			getName(){
+				return this.name;
+			}
+
+			static createAnonymous(gender){
+				let name = gender == "Male" ? "Krishna" : "Someone Else";
+				return new Person(name);
+			}
+		}
+
+		let std = new Person("Krishna");
+
+		console.log(person);
+
+		let anony = Person.createAnonymous("Male");
+
+		console.log(anony);
+
+Static Properties : 
+	Like a static method, a static property is not shared by all instances
+	of a class.
+
+	className.property 
+		-----------------------------------------
+Inheritance : 
+
+	In ES6, we use extends keyword to implement the Inheritance.
+	The Class to be extended is called a base class or parent class.
+	The class that extends the base class or parent class is called
+	the derived class or child class. 
+
+	Call the super(arguments) in the child class's constructor to 
+	invoke the parent class's constructor.
+
+	we use super keyword to call methods of the parent class in the
+	methods of the child class.
+
+
+
+		class Animal {
+			constructor(legs){
+				this.legs = legs;
+			}
+			walk(){
+				console.log(`Walking on ${this.legs} legs`);
+			}
+		}
+
+		class Bird extends Animal{
+			constructor(legs,color){
+				super(legs);
+				this.color = color;
+			}
+			fly(){
+				console.log(`flying`);
+			}
+			getColor(){
+				return this.color;
+			}
+		}
+
+		let bird = new Bird(2, "white");
+
+		bird.walk();
+		bird.fly();
+		console.log(bird.getColor());
+
+Person  - Base Class / Parent Class 
+firstName 
+lastName 
+age
+getFullName  
+
+create Salary  - class --> Person
+properties 
+fullName 
+salary ---> get the month from Date method --> no.of working days , annual salary
+getSalary()  
+
+
+create Employee extends Salary 
+Designation 
+fullName
+Employee getSalary 
+
+
+
+
+
+
+
+
+Session 17:
+	ES6
+		promises 
+			promise is an object that encapsulates the result of an asynchronous operation 
+		A Promise object has a state that can be one of the 3 states :
+				Pending 
+				Fulfilled with a value 
+				Rejected with a reason 
+		in the beginning, the state of the promise is pending, indicating that the 
+		asynchronous operation is in progress.
+
+		Depending on the result of the asynchronous operation, the state changes to 
+		either Fulfilled or rejected.
+
+		creating a promise : 
+			To Create a promise, we use Promise() constructor.
+
+			const promise = new Promise((resolve,reject) => {
+				// operations 
+
+				if(success){
+					resolve(value);
+				}else{
+					reject(error)
+				}
+
+			});
+
+			The Promise constructor accepts a callback function that typically 
+			performs an asynchronous operation.
+			This function is often referred to as an executor 
+
+			The executor accepts 2 callback functions with the name 
+			resolve and reject 
+
+			if the asynchronous operation completes successfully, the executor will 
+			call the resolve() function to change the state of the promise from 
+			pending to fullfilled with a value.
+
+			incase of an error, the executor will call the reject() function to 
+			change the state of the promise from pending to rejected with a 
+			reason.
+
+			Once a promise reaches either fulfilled or rejected state, it stays in that
+			state and can't go to another state.
+	
+	Consuming a Promise : 
+
+	we have 3 methods to consume a promise : 
+	then
+	catch 
+	finally 
+
+	The then() method : 
+	To get the value of Promise when it's fullfilled, we call then() method of the promise object.
+	
+	promise.then(onFullfilled,onRejected)
+	The then() method accepts 2 callback functions : 
+	onFullfilled
+	onRejected
+	The catch() method 
+
+	if we want to get the error only when the state of the promise is rejected, 
+	we can use the catch() method of the Promise Object.
+
+	The finally() method 
+
+	if we want to execute the some piece of code whether the promise is fulfilled
+	or rejected, we use finally() method.
+
+
+
+
+
+Example : 
+let success = true;
+function getUsers(){
+    return new Promise((resolve,reject) => {
+        setTimeout(() => {
+            if(success){
+            resolve([
+                {
+                    userName : 'Krishna', email : 'kok@gmail.com'
+                }
+            ]);
+        }else{
+            reject('Failed to get the User List');
+        }
+        }, 1000);
+    });
+}
+
+const promise = getUsers();
+
+console.log(promise);
+
+promise
+.then((users) => {console.log(users)})
+.catch((error) => console.log(error))
+.finally(() => console.log("Finally"));
+
+
+
+
+Promise Chaining : 
+
+JavaScript promise chaining pattern that chains the promises to execute
+asynchronous operations in sequence.
+
+Examples : 
+let p = new Promise((resolve,reject) => {
+    setTimeout(() => {
+        resolve(10);
+
+    }, 2000);
+});
+
+
+p.then(result => {
+    console.log(result);
+    return result * 2;
+}).then(result => {
+    console.log(result);
+    return result * 3;
+}).then(result => {
+    console.log(result);
+    return result * 4;
+}).then(result => {
+    console.log(result);
+})
+
+Example: 
+
+function getUser(userId){
+    return new Promise((resolve,reject) => {
+        console.log('Getting Users');
+        setTimeout(() => {
+            resolve({
+                userId : userId,
+                userName : 'Admin'
+            })
+        },2000);
+    })
+}
+
+function getServices(user){
+    return new Promise((resolve,reject) => {
+        console.log(`Getting Services of ${user.userName}`);
+        setTimeout(() => {
+            resolve(['Email','Print','Fax']);
+        },2000);
+    })
+}
+
+function getServiceCost(services){
+    return new Promise((resolve,reject) => {
+        console.log(`Calculating the services cost of ${services}`);
+        setTimeout(() => {
+            resolve(services.length * 200)
+        },2000);
+    })
+}
+
+getUser(100).then(getServices).then(getServiceCost).then(console.log);
+
+Promise.all()
+	The Promise.all() method accepts a list of promises and returns a new Promise
+	that resolve to an array of results of the input promises if all the input
+	promises resolved. else reject with an error of the first promise rejected.
+
+
+Promise.race()
+	The Promise.race(iterabale) method returns a new Promise that fulfills or 
+	rejects as soon as one of the promises in an iterabale fulfills or 
+	rejects with the value or error from that promise.
+
+
+Promise.any()
+	Promise.any() method takes the list of the promises and return a promise that 
+	fulfills first.
+
+Promise.allSettled() ES2020
+
+Handle Errors in Promises : 
+
+when we raise an exception outside the promise, we must catch it with try/catch 
+
+function getUser(userId){
+    return new Promise((resolve,reject) => {
+        console.log('Getting Users');
+        setTimeout(() => {
+            resolve({
+                userId : userId,
+                userName : 'Admin'
+            })
+        },2000);
+    })
+}
+
+function getServices(user){
+    return new Promise((resolve,reject) => {
+        console.log(`Getting Services of ${user.userName}`);
+        setTimeout(() => {
+            resolve(['Email','Print','Fax']);
+        },2000);
+    })
+}
+
+function getServiceCost(services){
+    return new Promise((resolve,reject) => {
+        console.log(`Calculating the services cost of ${services}`);
+        setTimeout(() => {
+            resolve(services.length * 200)
+        },2000);
+    })
+}
+
+try{
+    getUser(100).then(getServices).then(getServiceCost).then(console.log);
+}
+catch (error){
+    console.log(`Caught by try/catch ${error}`);
+}
+
+
+Async/Await : 
+Async / Await is new way to handle asynchronous operations.
+function getUser(userId){
+    return new Promise((resolve,reject) => {
+        console.log('Getting Users');
+        setTimeout(() => {
+            resolve({
+                userId : userId,
+                userName : 'Admin'
+            })
+        },2000);
+    })
+}
+
+function getServices(user){
+    return new Promise((resolve,reject) => {
+        console.log(`Getting Services of ${user.userName}`);
+        setTimeout(() => {
+            resolve(['Email','Print','Fax']);
+        },2000);
+    })
+}
+
+function getServiceCost(services){
+    return new Promise((resolve,reject) => {
+        console.log(`Calculating the services cost of ${services}`);
+        setTimeout(() => {
+            resolve(services.length * 200)
+        },2000);
+    })
+}
+
+async function showServiceCost(){
+    try
+    {
+    let user = await getUser(100);
+    let services = await getServices(user);
+    let cost = await getServiceCost(services);
+    console.log(`The Services Cost : ${cost}`);
+    }
+    catch(error){
+        console.log(error);
+    }
+}
+
+showServiceCost();
+
+----------------------
+WEB API : 
+
+Fetch API 
+
+The Fetch API is a modern interface that allows to make HTTP requests to servers from 
+web Browsers.
+
+XMLHttpRequest(XHR)
+
+ fetch('https://jsonplaceholder.typicode.com/users')
+ .then(response => response.json())
+ .then(data => console.log(data));
+
+
+async function fetchData(){
+    let reponse = await fetch('https://jsonplaceholder.typicode.com/users');
+    let data = await reponse.json();
+    console.log("data",data);
+}
+
+fetchData();
+
+Session 18 :
+
+		Modules 
+		 An ES6 module is a JavaScript file that executes in strict mode only.it means that 
+		 any Variables or functions declared in the module won't be added automatically to 
+		 the global scope.
+		 
+				export and import 
+
+				ES6 modules are files containing JavaScript code that can export and import 
+				functionalities between different files. They allow developers to organize code into 
+				separate files, making it easier to maintain and scale the codebase. 
+				Unlike traditional scripts, there is no special module keyword; the file 
+				operates like a script but supports import and export statements for 
+				sharing code.
+
+
+
+		// import { message as msg,setMessage } from "./app.js";
+
+		// setMessage("Hello ES6 Module");
+		// console.log(message);
+
+		import * as sam from './app.js';
+		import anything from './sort.js';
+
+		sam.setMessage("Hello Sam");
+		console.log(sam.message);
+		console.log(anything([2,1,4,5,3]));
+
+		app.js 
+
+		export let message = "I am from APP";
+
+		export function getMessage(){
+			return message;
+		}
+
+		export function setMessage(msg){
+			message = msg;
+		}
+
+
+		sort.js 
+
+		export default function(arr){
+			arr.sort();
+			return arr;
+		}
+
+		<script type="module" src="script.js" defer></script>
+
+
+		ES2020
+			import(moduleSpecifier) ;
+
+			dynamically import a module when needed 
+
+			let btn = document.querySelector('#btn');
+
+			btn.addEventListener('click',function(){
+				import('./app.js')
+				.then((app) => {
+					console.log(app.message);
+				})
+				.catch(err => console.log(err));
+			})
+
+	ES6	collections :
+	 	A Map object holds key-value pairs. keys are unique in a Map's collection.
+			Map()
+
+			let map = new Map([iterable])
+
+		Methods and properties : 
+			set(key,value)
+			get(key)
+			has(key)
+			clear()
+			delete(key)
+			entries()
+			keys()
+			values()
+			size 
+
+		WeakMap is similar to a Map except the keys of WeakMap must be objects.
+			get(key)
+			set(key,value)
+			has(key)
+			delete(key)
+
+		let emp1 = {name : "Abhi"}, emp2 = {name : "Balu"}, emp3 = {name : "Cita"};
+
+		let userRoles = new WeakMap();
+
+		console.log(typeof(userRoles));
+
+		userRoles.set(emp1,'Developer').set(emp2,'Designer').set(emp3,"Admin");
+
+		//console.log(userRoles.size);
+
+		//console.log(userRoles.values());
+
+		let a = 'abhi',b = 'Balu';
+
+		let users = new Map();
+
+		users.set(a,"Developer").set(b,'Designer');
+
+		console.log(users);
+
+		Set 
+		stores a collection of unique values of any type.
+
+		let setObj = new Set(iterableObject);
+
+		add(value)
+		clear()
+		delete(value)
+		entries()
+		has(value)
+		keys()
+		size 
+
+		let chars = new Set(['a','b','a','c','b','a']);
+		console.log(chars);
+
+WeakSet is similar to a Set except the keys of WeakSet must be objects.
+
+		let obj = {a: "1"}, obj1 = {a : "1"}, obj3 = {b : "1"};
+		let chars = new WeakSet([obj,obj1,obj3]);
+		console.log(chars);
+
+
+
+	symbol 
+			is a new primitive type.
+			Symbol doesn't have a literal form.
+
+		var numbers = [4,5,6,7,8];
+		// for(let num of numbers){
+		//     console.log(num);
+		// }
+
+		var iterator = numbers[Symbol.iterator]();
+
+		console.log(iterator.next());
+		console.log(iterator.next());
+		console.log(iterator.next());
+		console.log(iterator.next());
+		console.log(iterator.next());
+		console.log(iterator.next());
+		console.log(iterator.next());
+
+
+In ES6, Symbol is a primitive data type that represents an unique identifier. 
+Every Symbol is guaranteed to be unique, even if they have the same description. 
+Symbols are often used as property keys to avoid name collisions, especially in the 
+case of object properties.
+
+ES6 also provides several built-in symbols that can be used to customize behavior in 
+objects, such as:
+
+Symbol.iterator for iterating over objects
+Symbol.toPrimitive for object-to-primitive conversion
+Symbol.toStringTag to change the result of Object.prototype.toString
+
+const iterableObj = {
+  data: [1, 2, 3],
+  [Symbol.iterator]() {
+    let index = 0;
+    return {
+      next: () => ({
+        value: this.data[index++],
+        done: index > this.data.length,
+      }),
+    };
+  },
+};
+
+for (const value of iterableObj) {
+  console.log(value); // 1, 2, 3
+}
+----------------------------------
+const obj = {
+  [Symbol.toPrimitive](hint) {
+    if (hint === 'number') {
+      return 42;
+    }
+    if (hint === 'string') {
+      return 'Hello';
+    }
+    return true; // default case for 'default' hint
+  }
+};
+
+console.log(+obj);        // 42 (number)
+console.log(`${obj}`);    // "Hello" (string)
+console.log(obj + '');    // "true" (default)
+----------------------------------
+		iterators & generators
+
+		iterable protocol 
+			Symbol.iterator
+		iterator protocol 
+			next()
+				{value: , done: true/false}
+		------------------------------------------		
+
+class Sequence {
+    constructor(start = 0, end = Infinity, interval = 1){
+        this.start = start;
+        this.end = end;
+        this.interval = interval;
+    }
+    [Symbol.iterator](){
+        let counter = 0;
+        let nextIndex = this.start;
+        return{
+            next : () => {
+                if(nextIndex <= this.end){
+                    let result = { value : nextIndex, done : false}
+                    nextIndex += this.interval;
+                    counter ++;
+                    return result
+                }
+                return {value : counter, done : true}
+            },
+            return : () =>{
+                console.log('cleaning up...')
+            }
+        }
+    }
+};
+
+let evenNumbers = new Sequence(2,10,2);
+
+console.log(evenNumbers);
+
+for(const num of evenNumbers){
+    // if(num > 6){
+    //     break;
+    // }
+    console.log(num);
+}
+---------------------------
+		generator 
+		 ES6 introduces  a new kind of function that is differnent from a regular function.
+
+		 A generator can pause midway and then continues from where it paused 
+
+		 yield statement returns a value and pauses the execution of the function.
+
+
+		function* generate(){
+			console.log('First Time');
+			yield 1;
+			console.log('Second Time');
+			yield 2;
+		} 
+
+		let gen = generate();
+		gen.next();
+		gen.next();
+		gen.next();
+
+function* loop(){
+    let index = 0;
+    while(true){
+        yield index++;
+    }
+}
+
+let a = loop();
+console.log(a.next());
+console.log(a.next());
+console.log(a.next());
+console.log(a.next());
+console.log(a.next());
+
+
+
+
+
+
+
+
+class Sequence{
+    constructor(start = 0, end = Infinity, interval = 1){
+        this.start = start;
+        this.end = end;
+        this.interval = interval;
+    }
+
+    *[Symbol.iterator](){
+        for(let index = this.start; index <= this.end; index += this.interval){
+            yield index;
+        }
+    }
+}
+
+let oddNumbers = new Sequence(1,10,2);
+for(const num of oddNumbers){
+    console.log(num);
+}
+
+----------------------------------------------------------------
+Web Storage : 
+	Client Storage 
+
+		Cookies 
+			A HTTP Cookie is a piece of data that server sends to a web Browser.Then, the web browser
+			stores the HTTP Cookie on the user's computer and sends it back to the same server in the
+			later requests. 
+
+			An HTTP Cookie is also known as a web Cookie or browser cookie. and it is commonly 
+			called a cookie.
+
+			HTTP is stateless. 
+
+			cookies serve the following : 
+				- Session Management 
+				- Personalization - user settings, themes etc .,
+				- Tracking - record and analyse user behaviors (advertising)
+
+			Cookie Details : 
+				Name 
+				Value 
+				Domain 
+				Path 
+				Expiration 
+				Secure flag 
+
+			Manage Cookies : 
+				Get a cookie 
+					document.cookie 
+				Set a cookie 
+					document.cookie = "userName = admin"
+				Remove a cookie 
+					set the cookie 
+
+			Static Methods of Cookie : 
+				get()
+				set()
+				remove()
+
+		 class Cookie {
+        static get(name) {
+          const cookieName = `${encodeURIComponent(name)}=`;
+          const cookie = document.cookie;
+          let value = null;
+
+          const startIndex = cookie.indexOf(cookieName);
+          if (startIndex > -1) {
+            const endIndex = cookie.indexOf(";", startIndex);
+            if (endIndex == -1) {
+              endIndex = cookie.length;
+            }
+            value = decodeURIComponent(
+              cookie.substring(startIndex + name.length, endIndex)
+            );
+          }
+          return value;
+        }
+
+        static set(name, value, expires, path, domain, secure) {
+          let cookieText = `${encodeURIComponent(name)}=${encodeURIComponent(
+            value
+          )}`;
+          if (expires instanceof Date) {
+            cookieText += `; expires=${expires.toGMTString()}`;
+          }
+
+          if (path) cookieText += `; path=${path}`;
+          if (domain) cookieText += `; domain=${domain}`;
+          if (secure) cookieText += `; secure`;
+
+          document.cookie = cookieText;
+        }
+
+        static remove(name, path, domain, secure) {
+          Cookie.set(name, "", new Date(0), path, domain, secure);
+        }
+      }
+
+      // set a cookie
+      Cookie.set("username", "admin");
+
+      // get a cookie
+      console.log(Cookie.get("username")); // admin
+
+      // remove a cookie by a name
+      Cookie.remove("username");
+
+		localStorage: 
+			localStorage is an instance of the Storage type that allows to store persistant data 
+			in the web Browsers.
+
+			The Storage type is designed to store name -value pairs. 
+				Methods : 
+					setItem(name,value)
+
+					getItem(name)
+
+					removeItem(name)
+
+					key(index)
+
+					clear()
+			Storage Properties : 
+					domain 
+					key 
+					newValue 
+					oldValue 
+
+			
+			localStorage can store only strings. To Store objects, we convert them to strings using 
+			JSON.stringify() method. We convert the strings into objects when we retrieve them from 
+			the localStorage using the JSON.parse() method.
+
+
+
+			
+const notes = [
+    {  
+        title: 'A note',
+        text: 'First Note'
+    },
+    {
+        title: 'Another note',
+        text: 'Second Note'
+    }
+]
+
+localStorage.setItem('notes', JSON.stringify(notes));
+
+const getNotes = () => {
+    let notes = JSON.parse(localStorage.getItem('notes'));
+    console.log(notes);
+    if(notes.length > 0){
+        for(let note of notes){
+            let div = document.createElement('div');
+            div.innerHTML = `<h4>${note.title}</h4><p>${note.text}</p>`;
+            document.body.appendChild(div);
+        }
+    }
+}
+
+		SessionStorage 
+			The SessionStorage object stores data only for a session. it means that the data stored 
+			in the sessionStorage will be deleted when the browser is closed.
+				The Storage type is designed to store name -value pairs. 
+				Methods : 
+					setItem(name,value)
+
+					getItem(name)
+
+					removeItem(name)
+
+					key(index)
+
+					clear()
+
+		IndexedDB : 
+				IndexedDB is a large-scale object store built into the browser. 
+
+				The IndexedDB allows to persistantly store the data using key-value pairs.
+
+				The values can be any JavaScript type including boolean, number, string, 
+				undefined,null, date, object, array, regex, blob, and files.
+
+				IndexedDB allows to create web applications that can work online and offline.
+
+					Databases 
+					Object stores 
+					Indexes 
+		Key Features of IndexedDB:
+		Storage of Complex Data: IndexedDB can store not only strings, but also more complex data 
+		types such as arrays, objects, or even binary data (files, blobs).
+		
+		Asynchronous API: IndexedDB operates asynchronously to prevent blocking the main thread.
+
+		Transactions: It supports transactional database systems, where multiple changes can be made 
+		automically.
+
+		Indexed Data: IndexedDB allows you to create indexes on object stores, which makes querying faster.
+
+		Client-Side Storage: IndexedDB allows you to persistently store large amounts of data on the 
+		client-side, up to several gigabytes depending on the browser.
+
+		Key Concepts in IndexedDB:
+		Database: A collection of object stores. IndexedDB databases are versioned.
+
+		Object Store: Similar to a table in SQL, but it holds JavaScript objects rather than rows of data.
+		
+		Transaction: Operations on the data are done in the context of a transaction. A transaction can 
+		read and write data in multiple object stores.
+		
+		Index: An index allows you to query data efficiently.
+		
+		Key: A unique identifier for each record in an object store.
+		
+		Cursor: Used to iterate over multiple records in an object store or index.
+		
+				// Open (or create) a database
+				let request = indexedDB.open("MyDatabase", 1);
+
+				// Handle database upgrades
+				request.onupgradeneeded = function(event) {
+				let db = event.target.result;
+				let objectStore = db.createObjectStore("MyStore", { keyPath: "id" });
+				objectStore.createIndex("name", "name", { unique: false });
+				};
+
+				// Handle success and errors
+				request.onsuccess = function(event) {
+				let db = event.target.result;
+
+				// Start a transaction
+				let transaction = db.transaction("MyStore", "readwrite");
+
+				// Access the object store
+				let objectStore = transaction.objectStore("MyStore");
+
+				// Add data to the store
+				let addRequest = objectStore.add({ id: 1, name: "John Doe" });
+
+				addRequest.onsuccess = function() {
+					console.log("Data added successfully");
+				};
+				};
+
+				request.onerror = function(event) {
+				console.log("Error opening database", event.target.errorCode);
+				};
+
+		
+		features have to try : 
+				Drag and Drop API 
+				FileReader API
+				Notification API 
+				Geolocation API 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+Session 19 : 
+	Node 
+	Node.js® is an open-source, cross-platform JavaScript runtime environment.
+
+	https://nodejs.org/en/
+
+	Node.js is a runtime environment for executing JavaScript code server-side. 
+	It’s built on Chrome’s V8 JavaScript engine and allows developers to write 
+	server-side code using 
+	JavaScript, which was traditionally used only for client-side scripting.
+
+	Here are some key features of Node.js:
+
+	1.Event-Driven Architecture: Node.js uses an event-driven, non-blocking I/O model, 
+	which makes it lightweight and efficient, especially for I/O-heavy applications like 
+	APIs and real-time web apps.
+
+	2.Single-Threaded: Node.js runs on a single thread with event looping. 
+	This event-driven architecture allows it to handle many requests efficiently without creating 
+	new threads for each request.
+
+	3.Package Manager (npm): Node.js comes with npm (Node Package Manager), which hosts 
+	thousands of open-source libraries and tools that make development faster and easier.
+
+	4.Asynchronous: By default, Node.js is asynchronous, which means that functions 
+	don’t wait for previous ones to complete before starting the next one. Callbacks, promises, and 
+	async/await patterns are used to handle asynchronous operations.
+
+	5.Cross-Platform: Node.js can run on different platforms (Windows, Linux, Unix, 
+	macOS).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	https://reactjs.org/
+
+	https://legacy.reactjs.org/
+
+	https://react.dev/
+
+	React JS  - A JavaScript library for building user interfaces
+	React is divided into 2 main parts : 
+		react 
+		react-dom 
+
+	nodejs 
+
+	node.js command prompt 
+		node --version 
+		node -v 
+		npm --version 
+		npm -v
+
+	Visual studio code : ctrl + `   ---> Terminal 
+
+	// Creating a project using CRA Template
+
+	npm install create-react-app
+
+	or 
+
+	npx create-react-app app_name 
+
+	open the folder in code -- app_name 
+
+	npm start 
+----------------------------------------------------
+	// creating Project Structure using VITE JS 
+
+	npm create vite@latest
+
+	provide ProjectName 
+	choose React
+	choose Javascript
+
+	Open the folder ProjectName
+
+	npm install
+
+	npm run dev 
+------------------------------------------------------
+ Another Alternative using NextJS
+
+ -----------------------------------------------------
+
+Session 20 : 
+	React JS  - A JavaScript library for building user interfaces
+	React is divided into 2 main parts : 
+		react 
+		react-dom 
+	Features of React JS : 
+		JSX  - Extension to the Java Script 
+		components 
+			class Components 
+			functional components
+				
+		Virtual DOM 
+		Javascript expressions
+			{}
+		one-way binding 
+		Performance
+
+		Component is made up of JavaScript logic with DOM.
+
+		React Uses a Virtual DOM which is light weight representation of the DOM.
+		When an element gets changed, it is first updated in the Virtual DOM.
+		Virtual DOM is represented by simple objects.
+
+		React compares the Virtual DOM to its previous state and only applies the DOM updates 
+		necessary to bring the DOM to the desired state.
+		
+		Components : 
+			Components let you split the page into independent and reusable parts. 
+
+		Separation of concerns is a programming principle that states that each concern should
+		be separated into individual pieces.
+
+		in React we have 2 types of Components:
+			Functional Components (es5/es6)
+			Class Components 
+		
+		*** Component Identifier must be in CamelCase.
+
+		function SimpleComponent(){
+
+		}
+
+		const SimpleComponent = () => {
+
+		}
+		
+		class SimpleComponent{
+
+		}
+
+
+		Rendering Components : 
+			We use user-defined components and render it on the other component.
+
+			function App(){
+				return(
+					<div>
+						<SimpleComponent/>
+					</div>
+				)
+			}
+
+			function App(){
+				return(
+					<div>
+						<SimpleComponent></SimpleComponent>
+					</div>
+				)
+			}
+
+		props : 
+			props stands for properties 
+
+			Props are arguments passed into React components.
+
+			Props are passed to components using HTML attributes.
+
+
+
+
+		Product Name 			Price 		Qty 		Product Total
+		Product1 				200			123			price * qty 
+		Product2 				220			133			price * qty 
+		Product3 				250			153			price * qty 
+			Total Quantity 		sum(qty) Total Price 	sum(product total)
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		Class Components : 	
+			class Components are typically used when there are more advanced user interactions, 
+			like forms,and animations.
+
+			All Class Components need to extend the React.Component class.
+
+			Class Components need to have a render method which is one of the Life Cycle methods
+			of a Class Component.
+
+
+
+
+
+Expressions : 
+	expressions are useful to bind the data in DOM of React Component
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Session 21 : 
+		Class Components 
+			State 
+				is similar to JavaScript object that have data to be used with the react js render.
+			The State data is a private object and is used with in the components inside a class.
+			setState()
+				is a method is used to update the state values. 
+
+			Props : 
+				To Communicate from one component to another component, we use props (Properties).
+				
+
+			methods in class components: 
+			export class Student extends React.Component{
+    // state ={
+    //     msg : "Hello This is a msg from State"
+    // }
+    constructor(props){
+        super(props);
+        this.state = {
+            msg : "Hello This is a msg from State",
+            count : 0
+        }
+        this.increment = this.increment.bind(this);
+        this.setMessage = this.setMessage.bind(this);
+    }
+    increment(){
+        this.setState({count : this.state.count + 1})
+    }
+    setMessage(event){
+        this.setState({msg : event.target.value})
+    }
+    students = this.props.sdata;
+    render(){
+        return(
+            <div>
+                <h1>Students Details</h1>
+                <h3>{this.state.msg}</h3>
+                <input type="text" value={this.state.msg} onChange={this.setMessage}/><br/>
+                {/* <button onClick={this.setMessage}>Set Message</button> */}
+                 <p>{this.students.length}</p>
+                 {this.students.map((student,index) => (
+                    <p key={index}>{student.name}  with Age : {student.age} having course : {student.course}</p>
+                 ))}
+                <div>
+                    <p>Count : {this.state.count}</p>
+                    <button onClick={this.increment}>Inc</button>
+                </div>
+            </div>
+        )
+    }
+}
+
+name 
+age 
+Marks : [30,40,50,60] 
+
+
+
+Sno | Name | Total Marks 
+
+
+
+SNo | Name | Result 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Life cycle Hook methods :
+	Each component in React has a life cycle which we can monitor and manipulate
+	during its 3 main phases : 
+		Initialization / Mounting 
+		Updating 
+		UnMounting
+
+		Initialization 
+			will be define props and state 
+			constructor(){
+
+			}
+		Mounting: 
+			when component is rendered inside the DOM 
+				static getDerivedStateFromProps()
+				componentDidMount()
+				render()
+		Update 
+			static getDerivedStateFromProps()
+			shouldComponentUpdate()
+			getSnapshotBeforeUpdate()
+			componentDidUpdate()
+		UnMounting 
+			componentWillUnmount()
+
+		Error Handling : 
+			static getDerivedStateFromError()
+			componentDidCatch()
+
+constructor() method is called before any method when the component is initiated and 
+it is the place to set up initial state and other initial values.
+
+The constructor() method is called with the props, as arguments and we use super() 
+method which  allows to inherit the parents methods and properties
+
+getDerivedStateFromProps()
+	is called before rendering the Elements in the DOM.This is the place to set the 
+	state object based on the initial props. it takes state as an argument and returns 
+	an Object with  changes to the state.
+
+render()
+	method is required and is the method that actually outputs the HTML to the DOM. 
+
+componentDidMount()
+	This method is called after the component is rendered.
+	
+
+Updating : 
+	The Next Phase in the lifecycle is when a component is updated.
+
+	A Component is updated whenever there is a change in the component's 
+	state or props.
+
+	React has 5 built in methods that gets called, in the following 
+	order : 
+		1. getDerivedStateFromProps()
+		2. shouldComponentUpdate()
+		3. render()
+		4. getSnapshotBeforeUpdate()
+		5. componentDidUpdate()
+
+	The render() method is required and will always be called. The other 
+	methods are optional and will be called if we define any of them 
+	according to the usage.
+
+	shouldComponentUpdate()
+		we can return a boolean value that specifies whether React should 
+		continue with the rendering or not. The default value is true.
+	
+
+
+
+	UnMounting : 
+		This phase in the lifecycle is when the component is removed from 
+		the DOM, or UnMounting.
+
+		componentWillUnmount() is called when the component is about to be 
+		removed from the DOM.
+
+
+	React Events : 
+
+		React Events should be written in lowerCamelCase syntax 
+			onClick instead of onclick 
+
+		React Event handlers are written inside expression {}
+
+		Passing Arguments : 
+		class App extends Component{
+			greet(name){
+				console.log("Hello " + name);
+			}
+			render(){
+				return(
+				<div className="App">
+					<h1>App Component</h1>
+					<button onClick={() => this.greet('Krishna')}>Click me</button>
+				</div>
+				)
+			}
+			} 
+
+			export default App;
+
+		Event Object : 
+		class App extends Component{
+			greet(name,e){
+				console.log("Hello " + name, e.type);
+			}
+			render(){
+				return(
+				<div className="App">
+					<h1>App Component</h1>
+					<button onClick={(event) => this.greet('Krishna',event)}>Click me</button>
+				</div>
+				)
+			}
+		} 
+
+
+
+
+
+
+
+
+
+Session 22: 
+		
+	CRUD Example class components 
+	Functional Components 
+	
+	 
+	
+Session 23: 
+	Functional Components 
+	 A functional component returns DOM, and behaves as a class component. 
+
+	Hooks : 
+	Hooks were added to React in Version 16.8
+
+	Hooks allow functional components to have access to state and other react 
+	features.
+	Hook Rules : 
+		There are 3 rules for hooks : 
+			Hooks can only be called inside React functional components 
+			Hooks can only be called at the top level of a component
+			Hooks cannot be conditional 
+
+	useState Hook : 
+		The React useState Hook allows to track state in a functional component
+
+		State generally refers to data or properties that need to be 
+		tracking in an application.
+
+		import {useState} from 'react';
+
+		we initialise our state by calling useState in our functional component
+
+		useState accepts an initial state and returns 2 values :
+			The Current State 
+			A function that updates the state 
+
+
+	useEffect Hook : 
+		The useEffect Hook allows to perform side effects in functional Components
+		Examples : Fetching Data, DOM Updations, Timers etc.,
+
+		useEffect accepts 2 arguments. The Second argument is optional.
+
+		useEffect(<function>,<dependency>)
+
+		1. No Dependency Passed 
+			useEffect(() => {
+				// Runs on every Render
+			});
+		2. An Empty Array Passed as argument 
+			useEffect(() => {
+				// Runs only on the first render
+			},[])
+		3. Props or State values 
+			useEffect(() => {
+				// Runs on first render
+				// And Any time any dependency values changes
+			},[prop,state])
+		4. Effect Cleanup 
+
+			Some Effects require cleanup to reduce memory leaks .
+
+			we do this by including a return function at the End of the 
+			useEffect Hook.
+
+			
+
+
+
+
+
+
+
+
+Session : 
+
+useRef 
+	Hook allows to persist values between renders 
+	it can be used to store a mutable values that does not cause re-render when updated.
+	it can be used to access a DOM element directly 
+
+	const refContainer = useRef(initialValue);
+
+	initialValue: The initial value you want the ref object to have.
+	
+	Returns: An object with a .current property, where the value is stored. 
+	You can update the .current property directly without causing a re-render.
+
+
+	Key Use Cases for useRef:
+	Accessing DOM Elements.
+	Storing mutable values that persist across renders (like timers or interval IDs).
+	Avoiding re-renders when a mutable value changes, since updating a ref doesn’t 
+	cause a component to re-render.
+
+	Difference between useRef and useState:
+		useState: Causes the component to re-render whenever the state changes.
+		useRef: Stores values that persist across renders without causing re-renders 
+		when changed.
+
+	When to use useRef:
+		To hold a reference to a DOM element.
+		To store mutable values that don’t need to cause a re-render 
+		(like timers, intervals, or counters).
+		To persist values across renders without triggering a re-render.
+
+	 Storing a Mutable Value
+		import React, { useState, useRef } from 'react';
+
+		const Timer = () => {
+		const [count, setCount] = useState(0);
+		const timerRef = useRef(null); // Use ref to store the timer ID
+
+		const startTimer = () => {
+			if (!timerRef.current) {
+			timerRef.current = setInterval(() => {
+				setCount((prevCount) => prevCount + 1);
+			}, 1000);
+			}
+		};
+
+		const stopTimer = () => {
+			clearInterval(timerRef.current); // Clear the timer
+			timerRef.current = null; // Reset the ref
+		};
+
+		return (
+			<div>
+			<h1>Count: {count}</h1>
+			<button onClick={startTimer}>Start</button>
+			<button onClick={stopTimer}>Stop</button>
+			</div>
+		);
+		};
+
+		export default Timer;
+
+	Persisting Values Across Renders (without causing re-renders)
+
+		import { useState, useRef } from 'react';
+
+		const Counter = () => {
+		const [count, setCount] = useState(0);
+		const rendersRef = useRef(0); 
+		/ To store number of renders without causing re-render
+
+		rendersRef.current += 1; // Increment the count on each render
+
+		return (
+			<div>
+			<h1>Count: {count}</h1>
+			<h2>Renders: {rendersRef.current}</h2>
+			<button onClick={() => setCount(count + 1)}>Increment Count</button>
+			</div>
+		);
+		};
+
+		export default Counter;
+
+	Does Not Cause re-renders
+		import { useEffect, useRef, useState } from "react";
+
+			const Simple = () => {
+				const [inputValue, setInputValue] = useState("");
+				const count = useRef(0);
+				// useRef only returns one item. it returns an object called current.
+				// const count = {current : 0}
+				useEffect(() => {
+					count.current = count.current + 1;
+				});
+
+				return(
+					<div>
+						<h1>Simple Component</h1>
+						<input type='text' value={inputValue}
+						onChange = {(e) => setInputValue(e.target.value)}
+						/>
+
+						<p>{inputValue}</p>
+						<p>Count : {count.current}</p>
+					</div>
+				)
+			}
+
+			export default Simple;
+
+	Accessing the DOM Elements :
+
+	We can add a ref attribute to an element to access it directly in the DOM.
+	import { useRef, useState } from "react";
+
+		const Simple = () => {
+			const inputVal = useRef(null);
+			const [result,setResult] = useState("");
+			const clickHandler = () => {
+				console.log('value :',inputVal.current.value);
+				setResult(inputVal.current.value);
+			}
+			return(
+				<div>
+					<h1>Simple Component</h1>
+					<input
+					ref={inputVal}
+					type='text'
+					name="message"
+					/>
+					<button onClick={clickHandler}>click</button>
+					<p>{result}</p>
+				</div>
+			)
+		}
+
+		export default Simple;
+		
+
+Memoization means caching a value so that it doesnot need to be recalculated
+
+useCallBack 
+	Hook returns a memoized callback function 
+
+	Allows to isolate resource intensive functions so that they will not 
+	automatically run on every render.
+
+	it only runs when one of its dependencies update 
+
+	- Leads to Improve Performance 
+
+	
+useMemo 
+	Hook returns a memoized value 
+
+	only runs when one of its dependencies update 
+
+	- Leads to Improve Performance.
+
+	The useCallBack and useMemo Hooks are similar. The Main difference is that 
+	useMemo returns a memoized value and useCallBack returns a memoized function.
+
+
+
+
+
+
+Fragment : 
+	Fragment is an empty element used to wrap multiple child elements while returning 
+	from a component.
+
+	<>
+	</>
+
+	<React.Fragment>
+	
+	</React.Fragment>
+
+
+useReducer : 
+	Hook is similar to the useState Hook.
+
+	it allows for custom state logic.
+
+	useReducer hook accepts 2 arguments : 
+
+	useReducer(<reducer>,<initialState>)
+
+	reducer function contains custom state logic and the initialState can be a simple
+	value but generally will contain an object.
+
+	The useReducer Hook returns the current state and a dispatch method 
+
+	
+
+
+----------------------------------------------------
+
+functions  - lowerCamel  - getData()
+
+Class  - CamelCase - Person 
+
+JSX 
+
+functional Components - CamelCase - App 
+functions / methods - lowercase - clickHandler
+
+class - CamelCase - React.Component --> App extends Component
+
+----------------------------------------------
+useContext 
+
+React Context is a way to manage state globally.
+
+it can be used together with the useState Hook to share the state between deeply 
+nested components more easily than with useState alone.
+
+
+
+-----------------------------------
+Custom Hook 
+
+Hooks are reusable functions.
+When we have component logic that needs to be used by multiple components, we can extract that 
+logic to a custom hook.
+
+Custom hooks start with 'use'
+
+
+
+React 
+
+	ReactRouterDOM 
+
+	Routing Module is used in React JS to achieve Single Page Application Architecture.
+	(SPA)
+
+	To make use of Routing, we have to Install react-router-dom package : 
+
+	npm install react-router-dom 
+
+	React Router DOM 
+	is having 2 types of Routers : 
+		BrowserRouter 
+		HashRouter 
+	
+	have 3 in built Components:
+		<Routes>  - Switch Statement and is a collection of Route components 
+		<Route> -> is used to render a component on path basis 
+				is having 3 important properties / attributes 
+					path, element, exact 
+		<Link> -> is used to define the nav links on the component	
+			and is having a property : to 
+
+
+Form Validations In React 
+Formik is a small group of React components and hooks for 
+building forms in React and React Native. It helps with the three following parts:
+
+1.Getting values in and out of form state
+2.Validation and error messages
+3.Handling form submission
+
+Yup is a schema builder for runtime value parsing and validation. 
+Define a schema, transform a value to match, assert the shape of 
+an existing value, or both. Yup schema are extremely expressive 
+and allow modeling complex, interdependent validations, or value 
+transformation.
+
+Important Attributes of Formik : 
+		initialValues
+		validationSchema 
+		onSubmit
+		
+
+		formik 
+		yup 
+
+		npm install formik yup 
+
+
+
+
+
+
+
+
+
+Redux :
+A Predictable State Container for JS Apps
+
+npx create-react-app my-app --template redux
+
+or 
+
+Existing React Apps
+
+npm install react-redux redux
+
+Redux was created to make the state management Predictable, providing a single 
+state container and strict rules on how state can be changed.
+
+Having a single state container makes easier to manage the state of an application, as we
+can access and change the data from any component that needs it, without having to pass 
+down the data.
+
+Core Concepts : 
+    Store 
+        In redux, the application's state is stored as a simple object called Store.
+        There should be a single store in an app.
+
+    Action 
+        An Action is just a plain Javascript object.
+        An Action clearly describes why the state change happened, and can be dispatched 
+        from anywhere in an App.
+        Actions can be viewed as payloads of information that send data to the store.
+        Actions are represented by simple Javascript object and need to have a type
+        property.
+
+    Reducers 
+        To Bind the store and the Action together, we need to write a function, called a 
+        reducer.
+        It Takes state and action as arguments, and returns the next state of the app.
+
+    Redux can be described using the following principles :
+        Single Source of Truth : 
+            The global state of the app is stored in a single Store.
+        State is read-only :
+            we can change the state only by dispatching the actions.
+        Pure Reducers 
+            Reducers are functions that handle the actions and return the next state 
+            of the application. Reducers need to be pure, meaning they cannot modify 
+            the state, they need to return a new state object.
+        
+    Action Creators : 
+        In order to use the same action with different payloads, as well as create 
+        reusable code, we can create Action Creators.
+
+        Action Creators are simple functions that return actions.
+
+        function addContact(person){
+            return {
+                type : 'ADD_CONTACT',
+                payload : person
+            }
+        }
+
+        Action Creators are not built-into the Redux library by default. It is a pattern
+        that was implemented to create code that reflects DRY(Don't Repeat Yourself) 
+        approach.
+
+    Combine Reducers: 
+        Redux gives a method called combineReducers allows to use more than one reducer 
+        so that when an action gets dispatched, the action would get run through all of 
+        the reducers instead of one. 
+
+        npm install redux react-redux 
+
+        Creating a Store : 
+            import {createStore} from 'redux';
+
+            const store = createStore(reducer);
+
+        Passing Store to Components : 
+            <Provider> element makes the store available to any nested 
+            child component.
+            import {Provider} from 'react-redux';
+
+            <Provider store = {store}>
+                <App/>
+            </Provider>
+         
+        Connect() function returns a new component, that wraps the component passed 
+        to it and connects to the store using its parameter functions.
+
+        it takes two optional parameters.
+            mapStateToProps
+            mapDispatchToProps
+            import {connect} from 'react-redux';
+
+            function connect(mapStateToProps?,mapDispatchToProps?)
+
+        mapStateToProps : The function is called every time the store state changes.
+        it recieves the state as a parameter and returns the state for the component.
+
+        mapDispatchToProps : This parameter is used to map the dispatch functions to props.
+
+Redux Thunk :
+Thunk middleware for Redux. It allows writing functions with logic inside that can interact with a 
+Redux store's dispatch and getState methods.
+
+npm install redux-thunk
+
+Hooks in React-Redux : 
+
+useSelector : A hook to access the redux store's state. 
+This hook takes a selector function as an argument. 
+The selector is called with the store state.
+
+This hook takes an optional equality comparison function as the second parameter that 
+allows you to customize the way the selected state is compared to determine whether 
+the component needs to be re-rendered.
+
+useDispatch : A Hook to access the redux dispatch function.
+
+
+				
+	
+
+
+
+
+
+	
+	 
+
+
+
+
+
+
+
+
+
