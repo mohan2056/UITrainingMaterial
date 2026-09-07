@@ -1,0 +1,1613 @@
+Java Script 
+ES 5 
+ES 6
+
+Libraries 
+
+Frameworks
+
+Session 1 : 
+
+Node JS is a Cross-Platform Run Time Environment and Library for running 
+Javascript Applications outside the browser.
+
+It is used for creating server-side and networking web Applications.
+
+It is Open Source and free to use.
+
+
+Basic Modules - Javascript - Used to run real-time server Applications.
+
+Node JS is a Platform built on Chrome's V8 JavaScript Runtime for 
+easily building fast and scalable network Applications.
+
+Node JS uses an event driven, non-blocking, I/O Model that makes it 
+light weight and efficient, perfect for data-intensive real-time 
+Applications that run across distrubuted devices.
+
+Node JS also provides a rich Library of various JavaScript Modules
+to simplify the developement of web Applications.
+
+Node JS = Runtime Environment + JavaScript Library
+
+Features : 
+
+1. Extremely Fast 
+
+2. I/O is asynchronous and Event Driven 
+    All API of Node JS are asynchronous i.e Non blocking.
+    So Node JS based server never waits for an API to return DATA.
+    The Server moves to the next API after calling it and a notification
+    mechanism of Events of Node JS helps the server to get a response 
+    from the previous API call.
+
+3. Single Threaded 
+    Node Js Follows a Single Threaded model with event looping 
+
+4. Highly scalable
+    Event mechanism helps the server to respond in a non-blocking way
+
+5. No Buffering
+    Node JS Cuts down the Overall Processing time while uploading audio
+    and video files. Node JS Applications never buffer any data and These
+    Applications simply output the data in Chunks.
+
+6. Open Source 
+7. License - MIT Open JS 
+
+
+Different Parts of Node JS 
+
+    Buffer
+    Streaming 
+    DNS
+    Domain
+    Global 
+    Net
+    Modules 
+    Error Handling 
+    Debugger
+    Console
+    Cluster
+    Add-ons 
+    Callback 
+    crypto
+
+Install Node JS 
+
+Node Console Applications
+
+Node Web Based Applications
+    3 Parts 
+    1. Import the Required Modules 
+            "require" - directive is used to load Node.js Module 
+    2. Create Server 
+            Establish a server which will listen to client's request 
+            similar to any HTTP Server 
+    3. Read request and return response 
+            Server reads the HTTP request made by the client which can be 
+            a browser or console and return the response.
+
+var http = require("http");
+
+http.createServer(function(request,response){
+    // Send the HTTP Header
+    // HTTP Status : 200 OK
+    // Content Type : text / plain 
+    response.writeHead(200,{'content-type' : 'text/plain'});
+    // send the response body as "Hello APP"
+    response.end('Hello App is here \n');
+}).listen(8801);
+console.log('Server is running at http://127.0.0.1:8801/');
+
+
+Node JS Console Module : 
+        Debugging console is similar to JavaScript Console.
+        3 Methods 
+            console.log()  - simple messages 
+            console.error() - errors 
+            console.warn() - warnings 
+    
+NODE JS - REPL 
+Read Eval Print Loop
+Read - it reads user's input, parse the input into JavaScript Data - structure and stores in memory 
+
+Eval - it takes and evaluates the data structure
+
+Print - it prints the result 
+
+Loop - it loops the above command until user press Ctrl + c twice 
+
+Node REPL Commands
+
+1. CTRL + c
+        terminates the current command
+2. CTRL + c twice 
+        terminates the node REPL
+3. CTRL + d 
+        terminates the node REPL 
+4. Up/down keys 
+        command history 
+5. tab keys 
+        specifies the list of current command 
+6. help
+        specifies the list of all commands 
+        .break    Sometimes you get stuck, this gets you out
+        .clear    Alias for .break
+        .editor   Enter editor mode
+        .exit     Exit the REPL
+        .help     Print this help message
+        .load     Load JS from a file into the REPL session
+        .save     Save all evaluated commands in this REPL session 
+        to a file
+
+Node JS Package Manager (NPM)
+
+    2 main functionalities 
+        it provides online repositories for nodejs packages / modules 
+        which are searchable on search.nodejs.org
+
+        it also provides command line utility to install Node Packages 
+        version management of Node Packages 
+        npm comes bundled with node.js installables in version after
+        V0.6.3 
+
+        npm --version
+
+        npm install <module_name>
+
+        npm uninstall <module_name>
+
+        npm search <module_name>
+
+    -v --version 
+    -h --help
+    -e --eval "script"
+    -p --print 
+    -c --check 
+    -i --interactive 
+    -r --require module 
+    --no-warnings
+    --trace-warnings
+    --trace-sync-io
+    --zero-fill-buffers 
+    --track-heap-objects 
+    --prof-process
+    --v8-options 
+    --tls-chiper-list 
+    --enable-fips
+    --force-fips 
+    --icu-data-dir 
+
+Session 2: 
+
+Node JS Global objects
+    are the Global in nature and available in all modules. we don't need to include
+    these objects in Application, rather they can be used directly. These objects 
+    are modules, functions, strings and Objects etc., some of these objects aren't 
+    actually in the global scope but in the module scope.
+
+Node JS __dirname 
+    it is a string and specifies the name of the directory that currently contains
+    the code 
+
+    console.log(__dirname);
+
+Node JS __filename 
+    it specifies the filename of the code being executed 
+    console.log(__filename);
+
+
+
+
+
+
+
+
+Node JS console class 
+
+    https://nodejs.org/docs/latest-v20.x/api/console.html
+
+Node JS Buffer class 
+    https://nodejs.org/docs/latest-v20.x/api/buffer.html
+
+Node JS Timer class 
+    https://nodejs.org/docs/latest-v18.x/api/timers.html
+
+Node JS OS 
+    provides some basic operating System related utility functions 
+
+    os.arch()
+    Returns the operating system CPU architecture for which the Node.js 
+    binary was compiled. 
+
+    os.cpus()
+    Returns an array of objects containing information about each logical CPU core.
+    The properties included on each object include:
+        model <string>
+        speed <number> (in MHz)
+        times <Object>
+            user <number> The number of milliseconds the CPU has spent in user mode.
+            nice <number> The number of milliseconds the CPU has spent in nice mode.
+            sys <number> The number of milliseconds the CPU has spent in sys mode.
+            idle <number> The number of milliseconds the CPU has spent in idle mode.
+            irq <number> The number of milliseconds the CPU has spent in irq mode.
+
+    os.endianness()
+        Returns a string identifying the endianness of the CPU for which the Node.js 
+        binary was compiled.
+        Possible values are 'BE' for big endian and 'LE' for little endian.
+
+    os.freemem()
+        Returns the amount of free system memory in bytes as an integer.
+
+    os.homedir()
+        Returns the string path of the current user's home directory.
+
+    os.hostname()
+        Returns the host name of the operating system as a string.
+
+    os.loadavg()
+        Returns an array containing the 1, 5, and 15 minute load averages.
+        The load average is a measure of system activity calculated by the 
+        operating system and expressed as a fractional number.
+        The load average is a Unix-specific concept. On Windows, the return value is 
+        always [0, 0, 0].
+    
+    os.networkInterfaces()
+        Returns an object containing network interfaces that have been assigned a 
+        network address.
+        The properties available on the assigned network address object include:
+            address <string> The assigned IPv4 or IPv6 address
+            netmask <string> The IPv4 or IPv6 network mask
+            family <string> Either IPv4 or IPv6
+            mac <string> The MAC address of the network interface
+            internal <boolean> true if the network interface is a loopback or similar interface 
+            that is not remotely accessible; otherwise false
+            scopeid <number> The numeric IPv6 scope ID (only specified when family is IPv6)
+            cidr <string> The assigned IPv4 or IPv6 address with the routing prefix in CIDR notation. 
+            If the netmask is invalid, this property is set to null.
+    
+    os.platform()
+        Returns a string identifying the operating system platform for which the Node.js 
+        binary was compiled. 
+        The value is set at compile time. Possible values are 'aix', 'darwin', 'freebsd',
+        'linux', 'openbsd', 'sunos', and 'win32'.
+    
+    os.release()
+        Returns the operating system as a string.
+    
+    os.tmpdir()
+        Returns the operating system's default directory for temporary files as a string.
+    
+    os.totalmem()
+        Returns the total amount of system memory in bytes as an integer.
+
+    os.type()
+        Returns the operating system name as returned by uname(3). For example, it returns 'Linux' 
+        on Linux, 'Darwin' on macOS, and 'Windows_NT' on Windows.
+    
+    os.uptime()
+        Returns the system uptime in number of seconds.
+    
+    os.userinfo([options])
+        Returns information about the currently effective user. On POSIX platforms, 
+        this is typically a subset of the password file. The returned object includes the 
+        username, uid, gid, shell, and homedir. On Windows, the uid and gid fields are -1, and 
+        shell is null.
+        The value of homedir returned by os.userInfo() is provided by the operating system. 
+        This differs from the result of os.homedir(), which queries environment variables for the 
+        home directory before falling back to the operating system response.
+        Throws a SystemError if a user has no username or homedir.
+------------------------app.js--------------------------   
+    let os = require('os');
+    console.log(os.type());
+---------------------------------------------------------
+> node app.js 
+
+------------------------------------------------------
+
+Node JS Timer 
+    Timer functions are global functions. we dont need to use require function in order 
+    to use timer functions 
+    
+    Set Timer functions 
+        setImmediate(callback[, ...args])
+        setInterval(callback[, delay[, ...args]])
+        setTimeout(callback[, delay[, ...args]])
+    
+    clear Timer functions 
+        clearImmediate(immediate)
+        clearInterval(timeout)
+        clearTimeout(timeout)
+
+Node JS Errors 
+    4 Types of Errors 
+        Standard JavaScript Errors
+        System Errors
+        user-specified errors
+        Assertion errors
+
+    Standard JavaScript errors such as 
+        <EvalError>, 
+        <SyntaxError>, 
+        <RangeError>, 
+        <ReferenceError>, 
+        <TypeError>, and 
+        <URIError>.etc 
+
+    System errors triggered by underlying operating system constraints such as 
+        attempting to open a file that does not exist or attempting to send data over a 
+        closed socket.
+    User-specified errors triggered by application code.
+    
+    AssertionErrors are a special class of error that can be triggered when Node.js
+        detects an exceptional logic violation that should never occur. 
+        These are raised typically by the node:assert module.
+
+Session 3 : 
+    Node JS DNS Module (Domain Name System (DNS))
+    contains methods to get the information of the given hostname.
+    commonly used DNS functions :
+        dns.getServers()
+            Returns an array of IP address strings, formatted according to RFC 5952, 
+            that are currently configured for DNS resolution. 
+            A string will include a port section if a custom port is used.
+        dns.setServers(servers)
+            Sets the IP address and port of servers to be used when performing DNS 
+            resolution. 
+            The servers argument is an array of RFC 5952 formatted addresses. 
+            If the port is the IANA default DNS port (53) it can be omitted.
+            RFC (Request For Comments)
+        
+        dns.lookup(hostname[, options], callback)
+        dns.lookupService(address, port, callback)
+        dns.resolve(hostname[, rrtype], callback)
+        dns.resolve4(hostname[, options], callback)
+        dns.resolve6(hostname[, options], callback)
+        dns.resolveAny(hostname, callback)
+        dns.resolveCname(hostname, callback)
+        dns.resolveCaa(hostname, callback)
+        dns.resolveMx(hostname, callback)
+        dns.resolveNaptr(hostname, callback)
+        dns.resolveNs(hostname, callback)
+        dns.resolvePtr(hostname, callback)
+        dns.resolveSoa(hostname, callback)
+        dns.resolveSrv(hostname, callback)
+        dns.resolveTxt(hostname, callback)
+        dns.reverse(ip, callback)
+            Performs a reverse DNS query that resolves an IPv4 or IPv6 address to an 
+            array of host names.
+
+
+
+
+        const dns = require('dns');
+        dns.lookup('www.yahoo.com',(err,addresses,family) => {
+            console.log('addresses :' ,addresses);
+            console.log('Family', family);
+        });
+        
+    Node JS Net 
+        Node JS provides the ability to perform socket programming. 
+        we can create chat application or 
+        communicate client with server applications using socket programming in Node JS.    
+
+        server .js 
+        const net = require('net');
+        var server = net.createServer((socket) => {
+            socket.end("Good Bye \n");
+        }).on('error',err => {
+        console.log(err);
+        });
+        // grab a random port
+        server.listen(() => {
+            address = server.address();
+            console.log("Opened server on:", address);
+        });
+
+        client.js
+        const net = require('net');
+        const client = net.connect({port : 52259},() => {
+            console.log('Connected to Server');
+            client.write('World \n');
+        });
+        client.on('data',data => {
+            console.log(data.toString());
+            client.end();
+        });
+        client.on('end',() => {
+            console.log('Disconnected from server');
+        });
+    
+Session 4 : 
+    Node JS Crypto 
+    crypto module supports cryptography and it provides cryptographic functionalities
+    that includes a set of wrappers for Open SSL's Hash, HMAC, Cipher, Decipher, 
+    sign and verify functions. 
+
+    Hash : 
+    Fixed -length string of bits i.e., procedurally and deterministically 
+    generated from some arbitrary block of source data. 
+
+    HMAC : Hash-based Message Authentication Code 
+    it is the process for applying a hash algorithm to both data and a secretkey 
+    that results in a single final hash.
+    Example : 
+    const crypto = require('crypto');
+    const secret = 'abcdefg';
+    const hash = crypto.createHmac('sha256',secret).update('Welcome to Node JS')
+                        .digest('hex');
+
+    console.log(hash);
+
+    ----------------------------
+    encryption cipher 
+
+    const crypto = require('crypto');
+    const cipher = crypto.createCipher('','apassword');
+    let encrypted = cipher.update('Hello Node JS','utf-8','hex');
+    encrypted += cipher.final('hex');
+    console.log(encrypted);
+
+-----------------------------------
+    const crypto = require('crypto');
+    const decipher = crypto.createDecipher('aes-192-gcm','apassword');
+    let encrypted = '0053b281be9e1e8b23c282c2e4';
+    let decrypted = decipher.update(encrypted,'hex','utf-8');
+    //decrypted += decipher.final('utf-8');
+    console.log(decrypted);
+
+Session 5 : 
+    TLS / SSL 
+    TLS - Transport Layer Security 
+    SSL - Secure Sockets Layer 
+    TLS is the successor to SSL.
+    TLS along with SSL is used for cryptographic protocols to Secure 
+    Communication over the web.
+    TLS Uses public-key cryptography to encrypt messages.
+    it encrypts Communication generally on the TCP Layer.
+
+    public-key cryptography:
+        each client and each server has 2 keys :
+                public key and private key 
+    
+        public key : shared with everyne 
+        private key : secured 
+
+        To encrypt a message, a computer requires its private key 
+        and the recipient's public key.On the other hand, to decrypt
+        the message, the recipient requires its own.
+                var tls = require('tls');
+-------------------------------------------------------------
+let tls = require('tls');
+function connected(stream){
+    if(stream){
+        //socket connected 
+        stream.write("GET/HTTP/1.0 Host:encrypted.google.com:443");
+    }else{
+        console.log("connection failed");
+    }
+}
+
+// needed to keep the socket variable in scope
+var dummy = this;
+// try to connect to the server 
+dummy.socket = tls.connect(443,'encrypted.google.com',function(){
+    // callback called only after successfull socket connection
+    dummy.connected = true;
+    if(dummy.socket.authorized){
+        // authorization successful
+        dummy.socket.setEncoding('utf-8');
+        connected(dummy.socket);
+    }else{
+        //authorization failed
+        console.log(dummy.socket.authorizationError);
+        connected(null);
+    }
+});
+dummy.socket.addListener('data',function(data){
+    //recieved data
+    console.log(data);
+});
+
+dummy.socket.addListener('error',function(error){
+    if(!dummy.connected){
+        // socket was not connected, notify callback
+        connected(null);
+    }
+    console.log("FAIL");
+    console.log("error:",error);
+});
+
+dummy.socket.addListener('close',function(){
+    // do something
+    console.log("Closed");
+});
+------------------------------------------------------
+
+Node JS Debugger 
+ provides a simple TCP based protocol and built-in Debugging client.
+
+ node debug app.js
+
+ node debug [script.js| -e "script" | <host>:<port>]
+
+Node JS Process 
+    provides the facility to get the process information such as 
+    processid
+    architecture
+    platform
+    version
+    release
+    uptime
+    upusage
+
+    it also be used to kill the process setuid,set groups, unmask etc
+
+    The process is a global object, an instance of Event Emitter 
+    can be accessed from anywhere.
+
+    Node JS Process properties:
+
+    arch        returns process architecture : 'arm','ia32','x64'
+
+    args        returns command line arguments as an array
+
+    env         returns user environment
+
+    pid         returns process id of the process
+
+    platform    returns platform  of the process : 'darwin','freebsd','linux','win32' or 'sunos'
+
+    release     returns the metadata for the current node release
+
+    version     returns node version 
+
+    versions    returns node version and its dependencies 
+
+    Node JS Process Functions: 
+
+    cwd()       returns path of current working directory
+
+    hrtime()    returns the current high-resolution real time 
+                in a [seconds,nanoseconds] array 
+
+    memoryUsage()
+
+    process.kill(pid,[,signal])
+
+    uptime()
+
+------------------------------------------------
+console.log(`Process Architecture : ${process.arch}`);
+console.log(`Process PID : ${process.pid}`);
+console.log(`Process Platform : ${process.platform}`);
+console.log(`Process version : ${process.version}`);
+console.log(`Process HRTIME : ${process.hrtime()}`);
+console.log(`Process UPTIME : ${process.uptime()}`);
+console.log(`Process Memory Usage : ${process.memoryUsage()}`);
+
+-------------------------------------------------------
+
+Session 6 : 
+    Node JS Child Process 
+
+    Child Process module provides the ability to spawn child 
+    processes in a similar manner to open.
+    There are 3 major ways to create child processes:
+        child_process.exec()
+            runs a command in the console and buffers the output
+
+            child_process.exec(command[,options],callback)
+
+        Parameters :    
+            1. Command - specifies the command to run with space separated arguments 
+            2. Options - It may contain one or more of the following :
+                            cwd : Current Working Directory
+                            env : environment key-value pairs 
+                            encoding : string (utf-8)
+                            shell :     bin /sh 
+                            timeout : Number (default : 0)
+                            maxBuffer : Number (default : 200 * 1024)
+                            killsSignal : string (default : 'SIGTERM')
+                            uidNumber   : sets the user identity of the process
+                            gidNumber   : sets the group identity of the process
+
+            3. Callback : The callback function specifies three arguments
+                                            error
+                                            stdout
+                                            stderr
+                            which is called with the following output when 
+                            process terminates.
+    -----------------------------------------------------------
+                const exec = require('child_process');
+                    //const { stderr } = require('process');
+                    exec('my.bat',(err,stdout,stderr) => {
+                        if(err){
+                            console.log(err);
+                            return;
+                        }
+                        console.log(stdout);
+                    });
+    ----------------------------------------------------------------
+        Node JS child_process.spawn() method
+            launches a new process with a given command. This method returns
+            streams and it is generally used when the process returns large 
+            amount of data.
+
+            child_process.spawn(command,[,options])
+
+    ------------------------------------------------------------------
+        ***    after    file system 
+    -------------------------------------------------------
+        Node JS child_process.fork() method
+            is a special case of spawn() to create Node Processes. 
+            This method returns object with a built-in Communication
+            channel in addition to having all the methods in a normal
+            chils process instance.
+            
+            child_process.fork(modulePath,[,options]);
+    -------------------------------------------------------------
+        *** after file system
+    -----------------------------------------------------
+
+
+    Node JS Buffers 
+        Node JS provides Buffer class to store raw data similar to an 
+        array of integers but corresponds to a raw memory allocation 
+        outside the V8 heap. Buffer class is used because pure JavaScript
+        is not nice to binary data.  So, when dealing with TCP streams or 
+        the file system, it is necessary to handle Octect streams.
+
+        Buffer class is a global class. it can be accessed in application
+        without importing buffer module.
+
+        Node JS Creating BUffers : 
+            1. Create an Uninitiated Buffer:
+                var buf = new Buffer(10); // 10 Octets 
+            2. Create a buffer from array : 
+                var buf = new Buffer([10,20,30,40,50]);
+            3. Create a buffer from String :
+                var buf = new Buffer("Simple easy String","utf-8");
+
+        Node JS Writing to Buffers : 
+            buf.write(string[,offset][,length][,encoding]);
+------------------------------------------------------------
+var buf = new Buffer.alloc(256);
+var len = buf.write("Simply Easy Learning");
+console.log("Octects Written", len);
+-----------------------------------------------------------
+
+        Node JS Reading from Buffers : 
+            buf.toString([encoding][,start][,end]);
+
+-------------------------------------------------------------
+var buf = new Buffer.alloc(26);
+for(var i = 0; i < 26;i++){
+    buf[i] = i + 97;
+}
+console.log(buf.toString('ascii'));
+console.log(buf.toString('ascii',0,5));
+console.log(buf.toString('utf8',0,5));
+console.log(buf.toString(undefined,0,5));
+-----------------------------------------------------------------
+Node JS File System (FS)
+File I/O is provided by simple wrappers around standard POSIX functions. 
+POSIX (Portable Operating System Interface) is a set of standard 
+operating system interfaces based on the Unix operating system
+Node File System(fs)
+module can be imported as 
+    var fs = require("fs");
+
+Node JS FS Reading a File : 
+    Every Method in FS module has synchronous and asynchronous forms 
+    asynchronous methods take a last Parameter as completion function callback 
+    
+    asynchronous method is preferred over synchronous method because it never 
+    blocks the program execution where as the synchronous method blocks
+-------------------------------------------
+var fs = require('fs');
+// Asynchronous reading 
+fs.readFile('input.txt',function(err,data){
+    if(err){
+        return console.log(err);
+    }
+    console.log('Asynchronous read', data.toString());
+});
+
+//synchronous reading 
+
+var data = fs.readFileSync('input.txt');
+console.log('Synchronous read', data.toString());
+console.log("Program ENded");
+-----------------------------------------------
+
+Session 7:
+
+Node Js Open a file 
+
+fs.open(path,flags[,mode],callback);
+
+flags :     
+    r   - reading 
+    r+  - reading and writing 
+    rs  - reading in synchronous mode 
+    rs+ - reading and writing and open it synchronously.
+    w   - writing 
+    w+  - reading and writing (file will be created id file not exists )
+    wx  - like w but fails if path exists 
+    wx+ - like w+ but fails if path exists 
+    a   - open file for appending (file will be created if file not there)
+    ax  - like a but fails if path exists 
+    a+  - open file for reading and appending. the file will be created if not there 
+    ax+ -  open file for reading and appending 
+
+--------------------------------------------------
+var fs = require('fs');
+console.log('Opening a file');
+fs.open('input.txt','r+',function(err,fd){
+    if(err){
+        return console.log("error ", err);
+    }
+    console.log("File Opened Successfully");
+});
+--------------------------------------------------
+
+
+
+Node JS Streams 
+    Streams are the Objects that facilitate to read the data from a source 
+    and write data to a destination.
+    4 Types of Streams :
+        Readable  - used for read operations
+        Writable  - used for write operations 
+        Duplex  - used for both read and write operations
+        Transform - type of duplex stream where the output is computed according 
+        to the input 
+
+    Each type of stream is an Event Emitter instance and throws several Events 
+    at different times.
+        Data - fired when there is data variable to read
+        End - fired when there is no more data available to read
+        Error - fired when there is any error recieving or writing data 
+        Finish - fired when all has been flushed to underlying stream system.
+
+-------------------------------------------------------------
+var fs = require('fs');
+var data = '';
+// create a readable stream 
+var readableStream = fs.createReadStream('input.txt');
+// set the encoding to be utf8
+readableStream.setEncoding('utf8');
+// Handle the stream events --> data,end,error
+readableStream.on('data',function(chunk){
+    data += chunk;
+});
+readableStream.on('end',function(){
+    console.log(data);
+});
+readableStream.on('error',function(err){
+    console.log(err.stack);
+});
+
+console.log("Program ended ");
+
+---------------------------------------------------------
+Node JS Writing to Stream
+
+var fs = require('fs');
+var data = "A New Solution of all Technology";
+
+// create a writable stream
+
+var wStream = fs.createWriteStream('Output.txt');
+
+// write the data to stream with encoding to be utf8
+
+wStream.write(data,'utf8');
+
+// mark the end of the file
+
+wStream.end();
+
+// Handle the stream events --> finish and error
+
+wStream.on('finish',function(){
+    console.log("Write Completed");
+});
+
+wStream.on('error',function(err){
+    console.log(err.stack);
+});
+
+console.log("Program Ended");
+------------------------------------------
+Node JS file information methods
+
+fs.stat(path,callback);
+
+stats class methods :
+    stats.isFile()
+        returns true if file type of a simple file
+    stats.isDirectory()
+        returns true if the file type is a directory
+    stats.isBlockDevice()
+        returns true if file type of a block device
+    stats.isCharacterDevice()
+        returns true if the file type of a character device
+    stats.isSymbolicLink()
+        returns true if the file type of a symbolic link
+    stats.ifFIFO()
+        returns true if the file type of a fifo
+    stats.isSocket()
+        returns true if the file type of a socket
+-------------------------------------------
+var fs = require('fs');
+console.log('Going to get the file info');
+
+fs.stat('app',function(err,stats){
+    if(err){
+        return console.error(err);
+    }
+    console.log(stats);
+    console.log("isfile ? ", stats.isFile());
+    console.log("isdirectory ?", stats.isDirectory());
+});
+
+------------------------------------------
+var fs = require('fs');
+console.log('Going to get the file info');
+
+fs.stat('input.txt',function(err,stats){
+    if(err){
+        return console.error(err);
+    }
+    console.log(stats);
+    console.log("isfile ? ", stats.isFile());
+    console.log("isdirectory ?", stats.isDirectory());
+});
+------------------------------------------
+Node JS Path 
+    Path module is used to handle and transform files paths. This 
+    module can be imported by using :
+        var path = require("path")
+    Path Methods :
+        1. path.normalize(p)
+                it is used to normalize a string path, taking care of '._' and '_' parts
+        2. path.join([path1][,path2][,....])
+                it is used to join all arguments together and normalize the resulting
+                path
+        3. path.resolve([from],to);
+                it is used to resolve an absolute path
+        4. path.isAbsolute(path);
+                it determines whether path is an absolute path
+                will always resolve the same location regardless of working directory.
+        5. path.relative(from,to);
+                it is used to solve the relative path from "from" to "to"
+        6. path.dirName(p);
+                it is used to solve the relative. it returns the Directory name of a path.
+        7. path.baseName(p,[,ext]);
+                it returns the last portion of a path. it is similar to the UNIX base name
+                command
+        8. path.extName(p);
+                it returns the extension of the path from the last '.' to the end of the 
+                string in the last portion of the path. else ' ' empty string 
+        9. path.parse(pathString);
+                it returns an object from a path string 
+        10. path.format(pathObject);
+                it returns a path string from an object, the opposite of path.parse.
+------------------------------------------------------------
+var path = require('path');
+// Normalization
+console.log('normalization',path.normalize('/assets/sample//node/newfolder/tab/..'));
+//join 
+console.log('Join path', path.join('/assets','sample','node/newfolder','tab','..'));
+
+// Resolve 
+console.log('resolve',path.resolve('input.txt'));
+
+// extension 
+
+console.log('ext Name',path.extname('input.txt'));
+
+-----------------------------------------------------------------
+
+Node JS String Decoder  
+
+        decode the buffer into string. 
+
+        2 methods 
+            decoder.write(buffer);
+                used to return the decoded string 
+            
+            decoder.end()
+                used to return trailing bytes if any left in the buffer 
+--------------------------------------
+
+
+const fs = require("fs");
+const {StringDecoder} = require("string_decoder");
+
+const decoder = new StringDecoder('utf-8');
+
+const readable = fs.createReadStream("input.txt");
+
+readable.on('data',(chunk) => {
+    const text = decoder.write(chunk);
+    const encoded = Buffer.from(text,'utf-8').toString('hex');
+    const decoded = Buffer.from(encoded,'hex').toString('utf-8');
+    console.log('Decoded chuck',text,encoded,decoded);
+});
+
+readable.on('end',() => {
+    console.log('Stream ended',decoder.end());
+});
+------------------------------------------
+
+Session 8 : 
+    Node JS Query String 
+    The Node JS Query String provides methods to deal with query string. it can be used 
+    to convert 
+    query string into JSON object and vice - versa. 
+
+    const qs = require('querystring');
+
+    Methods : 
+        querystring.parse(str[,sep][,eq][,options])
+            converts query string to JSON object
+
+        querystring.stringify(obj[,sep][,eq][,options])
+            converts JSON object into query string 
+--------------------------------------------------
+const qs = require('querystring');
+//const obj1 = qs.parse('name = mohan & company = careerit');
+const str1 = qs.stringify({
+    'name ': ' mohan ',
+    ' company ': ' careerit'
+  });
+//console.log(obj1);
+console.log(str1);
+-----------------------------------------------
+Node JS ZLIB
+    Zlib is a module is used to provide compression and decompression (zip and unzip) 
+    functionalities
+    it is implemented using Gzip and deflate/inflate.
+
+    const zlib = require('zlib')
+
+    compressing and decompressing a file can be done by piping the source stream data 
+    into a destination stream through zlib stream.
+-----------------------------
+const zlib = require('zlib');
+const gzip = zlib.createGzip();
+const fs = require('fs');
+const inp = fs.createReadStream('input.txt');
+const out = fs.createWriteStream('input.txt.gz');
+inp.pipe(gzip).pipe(out);
+----------------------------------
+const zlib = require('zlib');
+const unzip = zlib.createUnzip();
+const fs = require('fs');
+const inp = fs.createReadStream('input.txt.gz');
+const out = fs.createWriteStream('input2.txt');
+inp.pipe(unzip).pipe(out);
+-----------------------------------
+
+Node JS V8
+
+V8 is an Open Source JavaScript engine developed by the Chromium Project for the Google 
+Chrome web Browser. It is written in C++. 
+
+Node JS V8 module respresents interfaces and event specific to the version of V8. it 
+provides methods to get information about heap memory thorough V8. 
+    V8.getHeapStatistics()
+    V8.getHeapSpaceStatistics()
+
+    const v8 = require('v8');
+----------------------------------------
+const v8 = require('v8');
+console.log(v8.getHeapStatistics());
+console.log(v8.getHeapSpaceStatistics());
+------------------------------------
+Memory limit of V8 in Node JS
+
+currently, by default V8 has a memory limit of 512mb on 32-bit and 1GB on 64-bit systems.
+you can raise 
+the limit by setting --max-old-space-size to a maximum of ~1GB for 32-bit an ~1.7GB 
+for 64-bit systems.
+
+Node JS callbacks : 
+Callback is an asynchronous equivalent for a function. it is called at the completion 
+of each task 
+in Node Js callbacks are generally used. 
+All APIs of Node are written in a way to support callbacks.
+
+Blocking Code 
+    1. input.txt 
+    2. app.js 
+        var fs = require('fs');
+        var data = fs.readFileSync('input.txt');
+        console.log(data.toString());
+        console.log('Program ended');
+
+Non Blocking Code 
+
+var fs = require('fs');
+fs.readFile('input.txt',function(err,data){
+    if(err) return console.log(err)
+    console.log(data.toString());
+});
+console.log("program ended");
+
+-------------------------------------------
+Node JS Events 
+
+In Node JS Applications, Events and Callback concepts are used to provide concurrency.
+As Node JS Applications are single threaded and every API of Node JS are asynchronous.
+So it uses async function to maintain the concurrency. Node JS uses observer pattern.
+Node thread keeps an event loop and after the completion of any task, it fires the 
+corresponding event which signals the event listener function to get executed.
+
+Event Driven Programming 
+
+Event Emitter class to bind event and event listener
+
+var events = require('events');
+// importing the events module 
+
+var eventEmitter = new events.EventEmitter();
+// create an eventEmitter Object 
+
+eventEmitter.on('eventName',eventHandler);
+//Bind the event and event Handler 
+
+eventEmitter.emit('eventName');
+// Fire an event 
+--------------------------------------
+var events = require('events');
+// importing the events module 
+
+var eventEmitter = new events.EventEmitter();
+// create an eventEmitter Object 
+
+var connectHandler = function connected(){
+    console.log('Connection Successfull');
+    eventEmitter.emit('data_received');
+}
+// create an event Handler 
+
+eventEmitter.on('connection',connectHandler);
+// Bind the connection event with the Handler
+
+eventEmitter.on('data_received',function(){
+    console.log('Data Received Successfully');
+});
+// Bind the data_recieved event with anonymous function
+
+eventEmitter.emit('connection');
+// Fire the connection event 
+console.log('Program Ended');
+---------------------------------------------
+
+Node JS Punycode 
+
+Punycode is an encoding syntax which is used to convert unicode (UTF-8) string of characters 
+to basic ASCII string of characters. since host names only understand ASCII characters so 
+Punycode is used. 
+
+It is used as an International Domain Name (IDN / DNA)
+
+var pc = require('punycode');
+console.log(pc.decode('maana-pta'));
+console.log(pc.encode('mañana'));
+console.log(pc.toASCII('mañana.com'));
+console.log(pc.toUnicode('xn--maana-pta.com'));
+
+---------------------------------
+Node JS TTY 
+
+--------------------------------
+
+Node JS Web Module 
+
+Web Server 
+    is a Software Program that handles HTTP request sent by HTTP Clients like Web 
+    Browsers, and returns Web Pages in response to the clients. 
+    Web Servers Usually respond with HTML documents along with images, stylesheets 
+    and scripts.
+
+Web Application Architecture
+    A Web Application Architecture is divided in 4 Layers 
+    Client Layer 
+    Server Layer
+    Business Layer
+    Data Layer 
+
+        Client Layer Contains Web Browsers, Mobile Browsers or Applications which can 
+        make HTTP request to the Web Server.
+
+        Server Layer Contains Web Server which can intercepts the request made by the 
+        clients and pass them a response.
+
+        Business Layer contains Application Server which is Utilized by the Web Server 
+        to do 
+        required processing. This layer interacts with data Layer using database or 
+        some 
+        external programs.
+
+        Data Layer contains Database or any source of Data.
+
+-----------------------------------
+var http = require('http');
+var fs = require('fs');
+var url = require('url');
+
+// Create a Server 
+
+http.createServer(function(request,response){
+    // Parse the Request containing the file name 
+    var pathName = url.parse(request.url).pathname;
+    // Print the Name of the file for which request is made
+    console.log("Request for " + pathName + " received");
+    // Read the Requested file content from file system
+    fs.readFile(pathName.substring(1),function(err,data){
+        if(err){
+            console.log(err);
+            // HTTP Status : 404: NOT FOUND 
+            // ContentType : Text/plain
+            response.writeHead(404,{'Content-Type':'text/html'})
+        }else{
+            // Page Found 
+            // HTTP Status : 200 : OK
+            // Content Type : text/plain
+            response.writeHead(200,{'Content-Type':'text/html'});
+            // Write the content of the file to response Body
+            response.write(data.toString());
+        }
+        // send the response body 
+        response.end();
+    });
+}).listen(8898);
+
+console.log("server running at http://127.0.0.1:8898/");
+------------------------------------
+Node JS with MySQL 
+
+Create a connection to mySql database 
+
+npm install -g mysql
+
+----------------------
+create a database folder 
+
+create a connection.js file :
+
+var mysql = require('mysql');
+var conn = mysql.createConnection({
+    host : "localhost",
+    user : "root",
+    password : "admin"
+});
+
+conn.connect(function(err){
+    if (err) throw err;
+    console.log("Connected to MySql");
+});
+
+-------------------------------
+
+Node JS MYSQL Create Database
+
+----------------------
+var mysql = require('mysql');
+var conn = mysql.createConnection({
+    host : "localhost",
+    user : "root",
+    password : "admin"
+});
+
+conn.connect(function(err){
+    if (err) throw err;
+    console.log("Connected to MySql");
+    conn.query("CREATE DATABASE NODESAMPLE", function(err,result){
+        if(err) throw err;
+        console.log("Database Created");
+    });
+});
+
+------------------------------
+
+Node JS MYSQL Create Table 
+
+CREATE TABLE command used to create a table in Mysql 
+
+var mysql = require('mysql');
+var conn = mysql.createConnection({
+    host : "localhost",
+    user : "root",
+    password : "admin",
+    database : "nodesample"
+});
+
+conn.connect(function(err){
+    if (err) throw err;
+    console.log("Connected to MySql");
+    var sql = "CREATE TABLE EMPLOYEES(id INT,name VARCHAR(255), age INT(3), city VARCHAR(255))";
+    conn.query(sql,function(err,result){
+        if(err) throw err;
+        console.log("Table Created");
+    });
+});
+
+-------------------------------------
+
+Adding Primary Key : 
+
+var mysql = require('mysql');
+var conn = mysql.createConnection({
+    host : "localhost",
+    user : "root",
+    password : "admin",
+    database : "nodesample"
+});
+
+conn.connect(function(err){
+    if (err) throw err;
+    console.log("Connected to MySql");
+    var sql = "CREATE TABLE EMPLOYEES2(id INT PRIMARY KEY,name VARCHAR(255), age INT(3), city VARCHAR(255))";
+    conn.query(sql,function(err,result){
+        if(err) throw err;
+        console.log("Table Created");
+    });
+});
+
+-----------------------------------------
+Add Columuns in Existing Table 
+
+var mysql = require('mysql');
+var conn = mysql.createConnection({
+    host : "localhost",
+    user : "root",
+    password : "admin",
+    database : "nodesample"
+});
+
+conn.connect(function(err){
+    if (err) throw err;
+    console.log("Connected to MySql");
+    var sql = "ALTER TABLE EMPLOYEES2 ADD COLUMN salary INT(10)";
+    conn.query(sql,function(err,result){
+        if(err) throw err;
+        console.log("Table Altered");
+    });
+});
+--------------------------------------
+Insert the Values into the Table 
+
+var mysql = require('mysql');
+var conn = mysql.createConnection({
+host : "localhost",
+user : "root",
+password : "admin",
+database : "nodesample"
+});
+
+conn.connect(function(err){
+if (err) throw err;
+console.log("Connected to MySql");
+var sql = "INSERT INTO EMPLOYEES2(id,name,age,city,salary) VALUES ('1','Amar M','26','Hyderabad','12000')";
+conn.query(sql,function(err,result){
+if(err) throw err;
+console.log("1 Record Created");
+});
+});
+
+----------------------------------
+
+Node JS Mongo DB 
+-
+MongoDB is a NoSQL Database. it can be used with Nodejs as a database 
+to insert and retrieve Data. 
+
+// service mongodb start started from compass 
+
+
+npm install mongodb 
+
+---------------------
+const { MongoClient } = require('mongodb')
+
+// Create Instance of MongoClient for mongodb
+
+const client = new MongoClient('mongodb://127.0.0.1:27017/')
+
+// Connect to database
+
+client.connect()
+
+    .then(() => {
+
+        console.log('Connected Successfully!')
+
+       
+
+        //Close the database connection
+
+        console.log('Exiting..')
+
+        client.close()
+
+    })
+
+    .catch(error => console.log('Failed to connect!', error))
+------------------------------
+to get the list of databases 
+
+const  MongoClient  = require('mongodb').MongoClient;
+
+//Create Instance of MongoClient for mongodb
+const client = new MongoClient('mongodb://127.0.0.1:27017')
+//let url = 'mongodb://127.0.0.1:27017/mydb';
+// Connect to database
+async function listDatabases(client){
+  databasesList = await client.db().admin().listDatabases();
+
+  console.log("Databases:");
+  databasesList.databases.forEach(db => console.log(` - ${db.name}`));
+};
+
+listDatabases(client);
+
+-----------------------------------
+To Create a Collection 
+
+
+const {MongoClient} = require("mongodb");
+const url = 'mongodb://127.0.0.1:27017/';
+const databasename = "Students"; // Database name 
+  
+MongoClient.connect(url).then((client) => {
+  
+    const connect = client.db(databasename);
+  
+    // New Collection
+    const collection = connect
+        .createCollection("courses");
+  
+    console.log("collection created");
+}).catch((err) => {
+  
+    // Handling the error 
+    console.log(err.Message);
+})
+
+--------------------------------------------
+
+const {MongoClient} = require('mongodb');
+  
+// server location
+const url = 'mongodb://127.0.0.1:27017';
+
+MongoClient.connect(url).then((client) => {
+  
+    console.log('Database created');
+      
+    // database name
+    const db = client.db("Students");
+      
+    // collection name
+    db.createCollection("students");
+})
+------------------------------------
+To Insert a Record 
+
+
+const {MongoClient} = require("mongodb");
+const url = 'mongodb://127.0.0.1:27017/';
+const databasename = "Students"; // Database name 
+
+const client = new MongoClient(url);
+async function run() {
+  try {
+    const database = client.db(databasename);
+    const std = database.collection("students");
+    // create a document to insert
+    const doc = {
+      sName : "Krishna",
+      age: 24,
+      course : "Angular"
+    }
+    const result = await std.insertOne(doc);
+    console.log(`A document was inserted with the _id: ${result.insertedId}`);
+  } finally {
+    await client.close();
+  }
+}
+run().catch(console.dir);
+
+---------------------------------
+To Insert Multiple Records 
+
+
+const {MongoClient} = require("mongodb");
+const url = 'mongodb://127.0.0.1:27017/';
+const databasename = "Students"; // Database name 
+
+const client = new MongoClient(url);
+async function run() {
+  try {
+    const database = client.db(databasename);
+    const std = database.collection("students");
+    // create a document to insert
+    const doc = [{
+        sName : "Abhinav",
+        age: 24,
+        course : "React"
+      },
+      {
+        sName : "MOhan",
+        age: 23,
+        course : "Angular"
+      },
+      {
+        sName : "Srinu",
+        age: 24,
+        course : "Javascript"
+      }]
+    const result = await std.insertMany(doc);
+    console.log(`A document was inserted with the _id: ${result.insertedCount}`);
+  } finally {
+    await client.close();
+  }
+}
+run().catch(console.dir);
+----------------------------------------
+select a record : 
+
+const {MongoClient} = require("mongodb");
+const url = 'mongodb://127.0.0.1:27017/';
+const databasename = "Students"; // Database name 
+
+const client = new MongoClient(url);
+
+client.connect().then((client) => {
+    const database = client.db(databasename);
+    const collection = database.collection("students");
+    collection.find({"sName":"Shiva"})
+    .toArray().then((result) => console.log(result))
+}).catch(err => console.log(err))
+
+    
+    
+--------------------------------
+selecting all records : 
+
+const {MongoClient} = require("mongodb");
+const url = 'mongodb://127.0.0.1:27017/';
+const databasename = "Students"; // Database name 
+
+const client = new MongoClient(url);
+
+client.connect().then((client) => {
+    const database = client.db(databasename);
+    const collection = database.collection("students");
+    collection.find({})
+    .toArray().then((result) => console.log(result))
+}).catch(err => console.log(err))
+
+    
+    
+----------------------------------------------
+Delete one / Multiple records
+
+const {MongoClient} = require("mongodb");
+const url = 'mongodb://127.0.0.1:27017/';
+const databasename = "Students"; // Database name 
+
+const client = new MongoClient(url);
+
+client.connect().then((client) => {
+    const database = client.db(databasename);
+    const collection = database.collection("students");
+    //collection.deleteOne({"sName": "Shiva"});
+    collection.deleteMany({"course":"Angular"});
+    console.log("Deleted Successfully");
+    
+}).catch(err => console.log(err))
+
+    
+    
+---------------------------------------------
+
+Update the records 
+
+const {MongoClient} = require("mongodb");
+const url = 'mongodb://127.0.0.1:27017/';
+const databasename = "Students"; // Database name 
+
+const client = new MongoClient(url);
+
+client.connect().then((client) => {
+    const database = client.db(databasename);
+    const collection = database.collection("students");
+    // collection.updateOne(
+    //     {"sName":"Srinu"},
+    //     { $set : {"course" : "React"}}
+    // );
+    collection.updateMany(
+        {"course": "React"},
+        {$set : {"course" : "Node, Mongo"}}
+    )
+    console.log("Updated Successfully");
+    
+}).catch(err => console.log(err))
+
+    
+    
+---------------------------------------
+sorting the records 
+
+const {MongoClient} = require("mongodb");
+const url = 'mongodb://127.0.0.1:27017/';
+const databasename = "Students"; // Database name 
+
+const client = new MongoClient(url);
+
+client.connect().then((client) => {
+    const database = client.db(databasename);
+    const collection = database.collection("students");
+    collection.find({}).sort({sName: -1})
+    .toArray().then((result) => console.log(result))
+}).catch(err => console.log(err))
+
+-------------------------------------
+
+Creating Node js Mysql with Express JS 
+
+PS C:\Users\Admin\nodejs-express-mysql> npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (nodejs-express-mysql) 
+version: (1.0.0)
+description: Node.js Restful CRUD API with Node.js, Express amd MySQL
+entry point: (index.js) server.js
+test command:
+git repository:
+keywords: nodejs, express,mysql,restapi
+author: Krishna
+license: (ISC)
+About to write to C:\Users\Admin\nodejs-express-mysql\package.json:
+
+{
+  "name": "nodejs-express-mysql",
+  "version": "1.0.0",
+  "description": "Node.js Restful CRUD API with Node.js, Express amd MySQL",
+  "main": "server.js",
+  "scripts": {
+Is this OK? (yes) yes
+PS C:\Users\Admin\nodejs-express-mysql> npm install mysql express cors --save
+
+added 72 packages, and audited 73 packages in 4s
+
+8 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\Admin\nodejs-express-mysql>
+
+
+CREATE TABLE IF NOT EXISTS `tutorials` (
+  id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  title varchar(255) NOT NULL,
+  description varchar(255),
+  published BOOLEAN DEFAULT false
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
